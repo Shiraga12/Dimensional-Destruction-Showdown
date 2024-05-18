@@ -36,7 +36,7 @@
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"rmTestingRoom","path":"rooms/rmTestingRoom/rmTestingRoom.yy",},},
     {"id":{"name":"CharacterData","path":"scripts/CharacterData/CharacterData.yy",},},
     {"id":{"name":"MovesetData","path":"scripts/MovesetData/MovesetData.yy",},},
     {"id":{"name":"TeamData","path":"scripts/TeamData/TeamData.yy",},},
@@ -51,7 +51,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rmTestingRoom","path":"rooms/rmTestingRoom/rmTestingRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
