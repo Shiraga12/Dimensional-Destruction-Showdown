@@ -1,23 +1,31 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-/// @desc Function Description
-/// @param {string}			_OCCUPATION	Description
-/// @param {array<string>}	_NAMES		Description
-function CreditData(_OCCUPATION,_NAMES){
-	OCCUPATION	=	_OCCUPATION	
-	NAMES		=	_NAMES		
+/// @desc Constructor for CreditData, which holds information about an occupation and its associated names.
+/// @param {string}			_OCCUPATION	The occupation or role in the credits.
+/// @param {array<string>|string}	_NAMES		An array of names associated with the occupation.
+function CreditData(_OCCUPATION, _NAMES) constructor {
+	OCCUPATION = _OCCUPATION;
+	NAMES = _NAMES;
 	
-	static getOCCUPATION	=	function()	{	return OCCUPATION	}
-	static getNAMES		=	function()	{	return NAMES		}
-	
-	static setOCCUPATION	=	function()	{	OCCUPATION	=	_OCCUPATION	}
-	static setNAMES		=	function()	{	NAMES		=	_NAMES		}
-	
-	static toString			=	function()	{	
-		var MEMBERS;
+	static getOCCUPATION = function() {
+		return OCCUPATION;
+	};
+	static getNAMES = function() {
+		return NAMES;
+	};
+
+	static setOCCUPATION = function(_OCCUPATION) {
+		OCCUPATION = _OCCUPATION;
+	};
+	static setNAMES = function(_NAMES) {
+		NAMES = _NAMES;
+	};
+
+	static toString = function() {
+		var MEMBERS = "";
 		for (var i = 0; i < array_length(NAMES); i++) {
-			MEMBERS += "${NAMES[i]}\n"
+			MEMBERS += string(NAMES[i]) + "\n";
 		}
-		return string($"{OCCUPATION}\n{MEMBERS}")
-	}
+		return string(OCCUPATION + ":\n" + MEMBERS);
+	};
 }
