@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"sSpongeBobPortraits",
+  "%Name":"sSpongeBobPortrait",
   "bboxMode":0,
   "bbox_bottom":1436,
   "bbox_left":0,
@@ -28,7 +28,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"cb61d287-8caa-416c-aae0-050738e881d4","blendMode":0,"displayName":"default","isLocked":false,"name":"cb61d287-8caa-416c-aae0-050738e881d4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"sSpongeBobPortraits",
+  "name":"sSpongeBobPortrait",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -40,7 +40,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"sSpongeBobPortraits",
+    "%Name":"sSpongeBobPortrait",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -64,7 +64,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"sSpongeBobPortraits",
+    "name":"sSpongeBobPortrait",
     "playback":1,
     "playbackSpeed":0.0,
     "playbackSpeedType":0,
@@ -76,28 +76,28 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"884ed23d-88b4-4462-ade7-4925e7ee4bed","path":"sprites/sSpongeBobPortraits/sSpongeBobPortraits.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"884ed23d-88b4-4462-ade7-4925e7ee4bed","path":"sprites/sSpongeBobPortrait/sSpongeBobPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"face565a-d44c-445b-b701-ce30d4817012","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c691096-7fe8-4735-bed4-701885489884","path":"sprites/sSpongeBobPortraits/sSpongeBobPortraits.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5c691096-7fe8-4735-bed4-701885489884","path":"sprites/sSpongeBobPortrait/sSpongeBobPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"997aae34-ecd1-4391-970d-37b9b48ac1fb","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bcf8a398-e4fc-4c3b-984e-4546b8d7e243","path":"sprites/sSpongeBobPortraits/sSpongeBobPortraits.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bcf8a398-e4fc-4c3b-984e-4546b8d7e243","path":"sprites/sSpongeBobPortrait/sSpongeBobPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"268e0e0b-c479-44ab-9ba3-809b921ef5ae","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"265c72b1-8da0-42a7-9dc6-e4d5c0a1ec89","path":"sprites/sSpongeBobPortraits/sSpongeBobPortraits.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"265c72b1-8da0-42a7-9dc6-e4d5c0a1ec89","path":"sprites/sSpongeBobPortrait/sSpongeBobPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"6ab1b6ea-a57f-4fe8-9bd6-d737c4f71020","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3fb829df-3b5a-4fab-83f8-fb30de35f93d","path":"sprites/sSpongeBobPortraits/sSpongeBobPortraits.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3fb829df-3b5a-4fab-83f8-fb30de35f93d","path":"sprites/sSpongeBobPortrait/sSpongeBobPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"47a8b7a8-0aac-4805-8e8a-9de506ed967e","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fcb8a804-0270-4349-92eb-64114ad6d98c","path":"sprites/sSpongeBobPortraits/sSpongeBobPortraits.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fcb8a804-0270-4349-92eb-64114ad6d98c","path":"sprites/sSpongeBobPortrait/sSpongeBobPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"fc25989f-8d80-4fd2-93fa-83ae0b8baa77","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bfe1e427-2bba-4238-aca9-7c65f820d0d4","path":"sprites/sSpongeBobPortraits/sSpongeBobPortraits.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"bfe1e427-2bba-4238-aca9-7c65f820d0d4","path":"sprites/sSpongeBobPortrait/sSpongeBobPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"218a3e01-c0a4-40c4-ad75-7bb5e75ddf4e","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9ab6664b-6919-485c-a617-f12afb9f3304","path":"sprites/sSpongeBobPortraits/sSpongeBobPortraits.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9ab6664b-6919-485c-a617-f12afb9f3304","path":"sprites/sSpongeBobPortrait/sSpongeBobPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c29ba36b-c77b-415a-af21-565ff6c7e670","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
