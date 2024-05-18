@@ -4,6 +4,8 @@ function TeamData() constructor{
 	POINT_CHARACTER	=	-1
 	MID_CHARACTER		=	-1
 	ANCHOR_CHARACTER	=	-1
+	
+	WINS					=	0
 		
 	static getPOINT_CHARACTER	=	function()	{	return POINT_CHARACTER	}
 	static getMID_CHARACTER		=	function()	{	return MID_CHARACTER	}

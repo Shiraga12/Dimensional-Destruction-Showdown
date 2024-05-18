@@ -3,7 +3,7 @@
 /// @param {string}			_DESCRIPTION	The description of the stage.
 /// @param {string}			_SERIES			The series the stage belongs to.
 /// @param {asset.GMroom}	_ROOM			The game room associated with the stage.
-function StageData(_NAME,_DESCRIPTION,_SERIES,_ROOM) constructor{
+function StageData(_NAME,_DESCRIPTION,_SERIES,_ROOM = -1) constructor{
 	NAME			=	_NAME		
 	DESCRIPTION	=	_DESCRIPTION
 	SERIES		=	_SERIES		
