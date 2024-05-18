@@ -22,10 +22,15 @@ function CreditData(_OCCUPATION, _NAMES) constructor {
 	};
 
 	static toString = function() {
-		var MEMBERS = "";
-		for (var i = 0; i < array_length(NAMES); i++) {
-			MEMBERS += string(NAMES[i]) + "\n";
+		if is_array(NAMES) {
+			var MEMBERS = "";
+			for (var i = 0; i < array_length(NAMES); i++) {
+				MEMBERS += string(NAMES[i]) + "\n";
+			}
+			return string(OCCUPATION + ":\n" + MEMBERS);
 		}
-		return string(OCCUPATION + ":\n" + MEMBERS);
+		else {
+			return string(OCCUPATION + ":\n" + NAMES);
+		}
 	};
 }

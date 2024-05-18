@@ -6,6 +6,9 @@ T1		=	new TeamData()
 T2		=	new TeamData() 
 TIME	=	90
 
+globalvar Modes;
+Modes = ["Battle", "Other"]
+
 globalvar CHARACTER;
 CHARACTER = [];
 array_push(CHARACTER, new CharacterData("Malachi and Darla",			"A 100% original character with unique abilities and a mysterious background.",											"Original Generation",						"",	[],	{
@@ -37,5 +40,9 @@ array_push(STAGE,	new StageData("Villains Reality",													"A desolate wast
 
 globalvar CREDIT;
 CREDIT = []
-array_push(CREDIT,	new CreditData("Programming",	["Shiraga",	"Sato",	"BadGameDev",	"Joshus_sarn", "Whisperer"]) )
-array_push(CREDIT,	new CreditData("Artists",			[""]) )
+array_push(CREDIT,	new CreditData("Project Lead",			["Kio"]))
+array_push(CREDIT,	new CreditData("Programmers",			["Shiraga",			"Sato",	"BadGameDev",	"Joshus_sarn",	"Whisperer"]))
+array_push(CREDIT,	new CreditData("Artists",					["Kio",	"arli",				"Spyder, 愚かな性交",	"Lucien Sawaqov",	"The Elite"]))
+array_push(CREDIT,	new CreditData("Concept Designers",	["Kio",	"CrockerJack",		"Freaky Chips"]))
+array_push(CREDIT,	new CreditData("Composers",				["SubjectLoser"]))
+
