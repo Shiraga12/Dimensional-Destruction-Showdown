@@ -59,6 +59,7 @@
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},},
     {"id":{"name":"rmTestingRoom","path":"rooms/rmTestingRoom/rmTestingRoom.yy",},},
     {"id":{"name":"CharacterData","path":"scripts/CharacterData/CharacterData.yy",},},
+    {"id":{"name":"CreditData","path":"scripts/CreditData/CreditData.yy",},},
     {"id":{"name":"MovesetData","path":"scripts/MovesetData/MovesetData.yy",},},
     {"id":{"name":"StageData","path":"scripts/StageData/StageData.yy",},},
     {"id":{"name":"TeamData","path":"scripts/TeamData/TeamData.yy",},},
