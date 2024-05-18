@@ -1,29 +1,21 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-/// @desc Function Description
-/// @param {string}			_NAME			Description
-/// @param {string}			_DESCRIPTION	Description
-/// @param {string}			_SERIES			Description
-/// @param {asset.GMroom}	_ROOM			Description
+/// @desc This function is a constructor for the StageData object.
+/// @param {string}			_NAME			The name of the stage.
+/// @param {string}			_DESCRIPTION	The description of the stage.
+/// @param {string}			_SERIES			The series the stage belongs to.
+/// @param {asset.GMroom}	_ROOM			The game room associated with the stage.
 function StageData(_NAME,_DESCRIPTION,_SERIES,_ROOM) constructor{
 	NAME			=	_NAME		
 	DESCRIPTION	=	_DESCRIPTION
 	SERIES		=	_SERIES		
 	ROOM			=	_ROOM		
 	
+	static getNAME			=	function()	{	return NAME			}
+	static getDESCRIPTION	=	function()	{	return DESCRIPTION	}
+	static getSERIES		=	function()	{	return SERIES			}
+	static getROOM			=	function()	{	return ROOM			}
 	
-	
-	
-	
+	static setNAME			=	function(_NAME)				{	NAME			=	_NAME			}
+	static setDESCRIPTION	=	function(_DESCRIPTION)	{	DESCRIPTION	=	_DESCRIPTION	}
+	static setSERIES		=	function(_SERIES)			{	SERIES		=	_SERIES			}
+	static setROOM			=	function(_ROOM)				{	ROOM			=	_ROOM			}
 }
-
-array_push(STAGE, new StageData("Honolulu","Malachi and Darla's stage. Done on top of a stage with hula dancers in the background. The dancers will cheer when someone's KOed!","Original Generation"))
-Conch Street (SpongeBob's Stage)
-Steamboat Willie (Mickey's stage)
-Dexter's Laboratory (Dexter and Dee Dee's stage)
-Shrek's Swamp (Shrek's Stage)
-The Moon - A Grand Day Out or West Wallaby Zoo - The Wrong Trousers / Project Zoo (Wallace and Gromit's Stage)
-Pac-Maze (PAC-MAN's Stage)
-Pacopolis (GA Pac-Man's Stage)
-The Resistance Hotel (A hotel with cameos of several heroes in the background, possibly make them soon to be playable characters)
-Villains Reality (A giant wasteland filled with cameos of villains in the background, preferably the big Bosses of the game. They'd all cheer when someone is KOed)
