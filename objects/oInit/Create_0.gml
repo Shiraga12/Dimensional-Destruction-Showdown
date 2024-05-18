@@ -83,3 +83,11 @@ array_push(CREDIT,	new CreditData("Artists",					["Kio",	"arli",				"Spyder, 愚
 array_push(CREDIT,	new CreditData("Concept Designers",	["Kio",	"CrockerJack",		"Freaky Chips"]))
 array_push(CREDIT,	new CreditData("Composers",				["SubjectLoser"]))
 
+globalvar ENCYCLOPEDIA;
+ENCYCLOPEDIA = []
+array_push(ENCYCLOPEDIA, new EncyclopediaData("T", "Team"));
+array_push(ENCYCLOPEDIA, new EncyclopediaData("T1", "Player 1's team"));
+array_push(ENCYCLOPEDIA, new EncyclopediaData("T2", "Player 2's team"));
+array_push(ENCYCLOPEDIA, new EncyclopediaData("Point Character", "The main character on each team, selected first. Also known as the character that initiates interactions with Player 2's Point Character."));
+array_push(ENCYCLOPEDIA, new EncyclopediaData("Mid Character", "The character selected second on a team."));
+array_push(ENCYCLOPEDIA, new EncyclopediaData("Anchor Character", "The character selected third on a team."));
