@@ -5,7 +5,7 @@
 /// @param {string}			_DESCRIPTION	Description
 /// @param {string}			_SERIES			Description
 /// @param {asset.GMroom}	_ROOM			Description
-function StageData(_NAME,_DESCRIPTION,_SERIES,_ROOM){
+function StageData(_NAME,_DESCRIPTION,_SERIES,_ROOM) constructor{
 	NAME			=	_NAME		
 	DESCRIPTION	=	_DESCRIPTION
 	SERIES		=	_SERIES		
@@ -17,7 +17,7 @@ function StageData(_NAME,_DESCRIPTION,_SERIES,_ROOM){
 	
 }
 
-Honolulu (Malachi and Darla's stage. Done on top of a stage with hula dancers in the background. The dancers will cheer when someone's KOed)
+array_push(STAGE, new StageData("Honolulu","Malachi and Darla's stage. Done on top of a stage with hula dancers in the background. The dancers will cheer when someone's KOed!","Original Generation"))
 Conch Street (SpongeBob's Stage)
 Steamboat Willie (Mickey's stage)
 Dexter's Laboratory (Dexter and Dee Dee's stage)

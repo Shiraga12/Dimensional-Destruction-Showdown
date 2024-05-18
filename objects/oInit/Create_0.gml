@@ -18,4 +18,17 @@ array_push(CHARACTER, new CharacterData("Wallace and Gromit",		"The eccentric in
 array_push(CHARACTER, new CharacterData("PAC-MAN",					"The classic arcade character who navigates mazes and eats pellets while avoiding ghosts.",							"Pac-Man",									[],	{}));
 array_push(CHARACTER, new CharacterData("Pac-Man",					"The reimagined version of PAC-MAN from the Pac-Man and the Ghostly Adventures series.",							"Pac-Man and the Ghostly Adventures",	[],	{}));
 
-globalvar Stage
+globalvar STAGE;
+STAGE = []
+array_push(STAGE, new StageData("Honolulu", "Malachi and Darla's stage. Done on top of a stage with hula dancers in the background. The dancers will cheer when someone's KOed!", "Original Generation", global.RoomHonolulu));
+array_push(STAGE, new StageData("Conch Street", "SpongeBob's Stage", "SpongeBob SquarePants", global.RoomConchStreet));
+array_push(STAGE, new StageData("Steamboat Willie", "Mickey's stage", "Epic Mickey", global.RoomSteamboatWillie));
+array_push(STAGE, new StageData("Dexter's Laboratory", "Dexter and Dee Dee's stage", "Dexter's Laboratory", global.RoomDextersLaboratory));
+array_push(STAGE, new StageData("Shrek's Swamp", "Shrek's Stage", "Shrek", global.RoomShreksSwamp));
+array_push(STAGE, new StageData("The Moon - A Grand Day Out", "Wallace and Gromit's Stage", "Wallace and Gromit", global.RoomMoonAGrandDayOut));
+array_push(STAGE, new StageData("West Wallaby Zoo - The Wrong Trousers / Project Zoo", "Another option for Wallace and Gromit's Stage", "Wallace and Gromit", global.RoomWestWallabyZoo));
+array_push(STAGE, new StageData("Pac-Maze", "PAC-MAN's Stage", "Pac-Man", global.RoomPacMaze));
+array_push(STAGE, new StageData("Pacopolis", "GA Pac-Man's Stage", "Pac-Man and the Ghostly Adventures", global.RoomPacopolis));
+array_push(STAGE, new StageData("The Resistance Hotel", "A hotel with cameos of several heroes in the background, possibly make them soon to be playable characters", "Various", global.RoomResistanceHotel));
+array_push(STAGE, new StageData("Villains Reality", "A giant wasteland filled with cameos of villains in the background, preferably the big Bosses of the game. They'd all cheer when someone is KOed", "Various", global.RoomVillainsReality));
+
