@@ -6,7 +6,6 @@ T1		=	new TeamData()
 T2		=	new TeamData() 
 TIME	=	90
 
-
 #macro KEY				keyboard_check
 #macro KEY_PRESSED	keyboard_check_pressed
 #macro KEY_RELEASED	keyboard_check_released
@@ -44,7 +43,10 @@ TIME	=	90
 #macro P2_KEYSTART		max(KEY(ord("RETURN")),	GAMEPAD_PRESSED(1,	gp_start))
 
 globalvar MODES;
-MODES = ["Battle", "Other"]
+MODES = []
+MODES[0]	=	["Battle",			"Other"]
+MODES[1]	=	["Versus",		"Tutorial",	"Training"]
+MODES[2]	=	["Encyclopedia",	"Settings"]
 
 globalvar CHARACTER;
 CHARACTER = [];
