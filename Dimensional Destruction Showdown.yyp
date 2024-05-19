@@ -56,6 +56,7 @@
   "name":"Dimensional Destruction Showdown",
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},},
     {"id":{"name":"oCreditRoll","path":"objects/oCreditRoll/oCreditRoll.yy",},},
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},},
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},},
@@ -84,9 +85,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"rmTestingRoom","path":"rooms/rmTestingRoom/rmTestingRoom.yy",},},
     {"roomId":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
     {"roomId":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
+    {"roomId":{"name":"rmTestingRoom","path":"rooms/rmTestingRoom/rmTestingRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
