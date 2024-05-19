@@ -55,8 +55,8 @@
   },
   "name":"Dimensional Destruction Showdown",
   "resources":[
+    {"id":{"name":"fntCredit","path":"fonts/fntCredit/fntCredit.yy",},},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
-    {"id":{"name":"Font2","path":"fonts/Font2/Font2.yy",},},
     {"id":{"name":"oCreditRoll","path":"objects/oCreditRoll/oCreditRoll.yy",},},
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},},
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},},
