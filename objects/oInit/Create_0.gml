@@ -50,20 +50,20 @@ MODES[2]	=	["Encyclopedia",	"Settings"]
 
 globalvar CHARACTER;
 CHARACTER = [];
-array_push(CHARACTER, new CharacterData("Malachi and Darla",			"A 100% original character with unique abilities and a mysterious background.",											"Original Generation",						"",	[],	{
+array_push(CHARACTER, new CharacterData("Malachi and Darla",			"A completely original character duo with distinct abilities and a mysterious past. Malachi, the cunning tactician, and Darla, the fierce warrior, bring a unique dynamic to the battlefield.",								"Original Generation",						"Gimmick Fighter",		[],	{
 	Portrait: sMalachiDarlaPortrait,
 }));
-array_push(CHARACTER, new CharacterData("SpongeBob SquarePants",	"The optimistic and enthusiastic sea sponge who lives in a pineapple under the sea.",									"SpongeBob SquarePants",					"",	[],	{
+array_push(CHARACTER, new CharacterData("SpongeBob SquarePants",	"The optimistic and enthusiastic sea sponge who lives in a pineapple under the sea. Known for his infectious energy and unwavering positivity, SpongeBob is always ready for a new adventure.",						"SpongeBob SquarePants",					"All-Rounder",			[],	{
 	Portrait: sSpongeBobPortrait,
 }));
-array_push(CHARACTER, new CharacterData("Mickey Mouse",				"The iconic Disney character in his adventurous form.",																		"Epic Mickey",								"",	[],	{}));
-array_push(CHARACTER, new CharacterData("Dexter and Dee Dee",		"Dexter, the boy genius, and his meddlesome sister Dee Dee from the animated series Dexter's Laboratory.",		"Dexter's Laboratory",					"",	[],	{}));
-array_push(CHARACTER, new CharacterData("Shrek",						"The lovable ogre from the swamp with a heart of gold.",																	"Shrek",										"",	[],	{}));
-array_push(CHARACTER, new CharacterData("Wallace and Gromit",		"The eccentric inventor Wallace and his intelligent dog Gromit, known for their quirky adventures.",					"Wallace and Gromit",						"",	[],	{}));
-array_push(CHARACTER, new CharacterData("PAC-MAN",					"The classic arcade character who navigates mazes and eats pellets while avoiding ghosts.",							"Pac-Man",									"",	[],	{
+array_push(CHARACTER, new CharacterData("Mickey Mouse",				"The legendary Disney character in his adventurous form. Mickey Mouse is beloved worldwide for his courage, cleverness, and ability to bring joy to those around him.",													"Epic Mickey",								"Rush-Down - Footsie",	[],	{}));
+array_push(CHARACTER, new CharacterData("Dexter and Dee Dee",		"Dexter, the boy genius with a secret laboratory, and his meddlesome sister Dee Dee from the animated series Dexter's Laboratory. Together, they create a mix of brilliant inventions and chaotic antics.",		"Dexter's Laboratory",					"Zoner",					[],	{}));
+array_push(CHARACTER, new CharacterData("Shrek",						"The lovable ogre from the swamp with a heart of gold. Shrek may appear gruff, but he's a true hero who values friendship and courage above all.",																			"Shrek",										"Grappler",				[],	{}));
+array_push(CHARACTER, new CharacterData("Wallace and Gromit",		"The eccentric inventor Wallace and his intelligent dog Gromit, known for their quirky and ingenious adventures. Their inventive spirit and teamwork make them a beloved duo.",											"Wallace and Gromit",						"Trapper",				[],	{}));
+array_push(CHARACTER, new CharacterData("PAC-MAN",					"The classic arcade character who navigates mazes, eats pellets, and avoids ghosts. PAC-MAN is an enduring icon of video gaming, known for his timeless gameplay and charming design.",								"Pac-Man",									"Mid-Range Offensive",	[],	{
 	Portrait: sPACMANPortrait,
 }));
-array_push(CHARACTER, new CharacterData("Pac-Man",					"The reimagined version of PAC-MAN from the Pac-Man and the Ghostly Adventures series.",							"Pac-Man and the Ghostly Adventures",	"",	[],	{}));
+array_push(CHARACTER, new CharacterData("Pac-Man",					"The reimagined version of PAC-MAN from the Pac-Man and the Ghostly Adventures series. This modern take on the classic character brings new adventures and a fresh look to the iconic hero.",					"Pac-Man and the Ghostly Adventures",	"Pseudo-Stance",		[],	{}));
 
 globalvar STAGE;
 STAGE = [];
