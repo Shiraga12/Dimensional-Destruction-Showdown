@@ -34,6 +34,8 @@
     {"$GMObjectProperty":"v1","%Name":"WALKSPEED","filters":[],"listItems":[],"multiselect":false,"name":"WALKSPEED","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"RUNSPEED","filters":[],"listItems":[],"multiselect":false,"name":"RUNSPEED","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"JUMPSPEED","filters":[],"listItems":[],"multiselect":false,"name":"JUMPSPEED","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"COMBOTIMER","filters":[],"listItems":[],"multiselect":false,"name":"COMBOTIMER","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"COMBOSEQUENCE","filters":[],"listItems":[],"multiselect":false,"name":"COMBOSEQUENCE","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -56,10 +56,13 @@
   "name":"Dimensional Destruction Showdown",
   "resources":[
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},},
+    {"id":{"name":"oCreditRoll","path":"objects/oCreditRoll/oCreditRoll.yy",},},
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},},
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},},
     {"id":{"name":"oP1","path":"objects/oP1/oP1.yy",},},
     {"id":{"name":"oPlayerTemplate","path":"objects/oPlayerTemplate/oPlayerTemplate.yy",},},
+    {"id":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
+    {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
     {"id":{"name":"rmTestingRoom","path":"rooms/rmTestingRoom/rmTestingRoom.yy",},},
     {"id":{"name":"CharacterData","path":"scripts/CharacterData/CharacterData.yy",},},
     {"id":{"name":"CreditData","path":"scripts/CreditData/CreditData.yy",},},
@@ -82,6 +85,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rmTestingRoom","path":"rooms/rmTestingRoom/rmTestingRoom.yy",},},
+    {"roomId":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
+    {"roomId":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

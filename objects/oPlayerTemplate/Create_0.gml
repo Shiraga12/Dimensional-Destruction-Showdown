@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-stateINTRO = function() {
+// Define combo variables
+stateINTRO	=	function()	{
 	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("Intro")
 }
-stateFREE = function() {
+stateFREE	=	function()	{
 	HSP = KEY_RIGHT - KEY_LEFT
 	if KEY_RUN {
 		MOVESPEED = RUNSPEED
@@ -69,22 +70,26 @@ stateFREE = function() {
 		//	}
 	#endregion
 }
-stateLP	=	function()	{	// Low Punch
+stateLP		=	function()	{	// Low Punch
 	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("LP")
+	array_push(COMBOSEQUENCE,"LP")
 }
-stateLK	=	function()	{	//	Low Kick
+stateLK		=	function()	{	//	Low Kick
 	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("LK")	
+	array_push(COMBOSEQUENCE,"LK")
 }
-stateHP	=	function()	{	// Heavy Punch
+stateHP		=	function()	{	// Heavy Punch
 	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("HP")
+	array_push(COMBOSEQUENCE,"HP")
 }
-stateHK	=	function()	{	//	Heavy Kick
+stateHK		=	function()	{	//	Heavy Kick
 	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("HK")	
+	array_push(COMBOSEQUENCE,"HK")
 }
-stateA1	=	function()	{	//	Assist 1
+stateA1		=	function()	{	//	Assist 1
 	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("CALLASSIST")
 }
-stateA2	=	function()	{	//	Assist 2
+stateA2		=	function()	{	//	Assist 2
 	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("CALLASSIST")
 }
 stateSWAP	=	function()	{	// Swap Character
@@ -96,6 +101,13 @@ stateSWAP	=	function()	{	// Swap Character
 	}
 	else if INDEX == 2	{
 		TEAM.swapCharacters(2,	0)
+	}
+}
+
+stateCOMBO_CHECK	=	function()	{
+	switch(TEAM.ORDER[INDEX].CHAR) {
+		case CHARACTER[0]:
+			break;
 	}
 }
 

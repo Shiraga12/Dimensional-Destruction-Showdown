@@ -77,11 +77,19 @@ array_push(STAGE,	new StageData("Villains Reality",													"A desolate wast
 
 globalvar CREDIT;
 CREDIT = []
-array_push(CREDIT,	new CreditData("Project Lead",			["Kio"]))
-array_push(CREDIT,	new CreditData("Programmers",			["Shiraga",			"Sato",	"BadGameDev",	"Joshus_sarn",	"Whisperer"]))
-array_push(CREDIT,	new CreditData("Artists",					["Kio",	"arli",				"Spyder, 愚かな性交",	"Lucien Sawaqov",	"The Elite"]))
-array_push(CREDIT,	new CreditData("Concept Designers",	["Kio",	"CrockerJack",		"Freaky Chips"]))
-array_push(CREDIT,	new CreditData("Composers",				["SubjectLoser"]))
+// Team
+array_push(CREDIT,	new CreditData("Project Lead",				["Kio"]))
+array_push(CREDIT,	new CreditData("Programmers",				["Shiraga",			"Sato",	"BadGameDev",	"Joshus_sarn",	"Whisperer"]))
+array_push(CREDIT,	new CreditData("Artists",						["Kio",	"arli",				"Spyder, 愚かな性交",	"Lucien Sawaqov",	"The Elite"]))
+array_push(CREDIT,	new CreditData("Concept Designers",		["Kio",	"CrockerJack",		"Freaky Chips"]))
+array_push(CREDIT,	new CreditData("Composers",					["SubjectLoser"]))
+// Character/Stage Credit
+array_push(CREDIT,	new CreditData("Dexter's Laboratory",		["Cartoon Network", "Warner Bros. Discovery"]));
+array_push(CREDIT,	new CreditData("Mickey Mouse",				"Disney"));
+array_push(CREDIT,	new CreditData("PAC-MAN",					"Bandai Namco Entertainment"));
+array_push(CREDIT,	new CreditData("Shrek",						"DreamWorks Animation LLC"));
+array_push(CREDIT,	new CreditData("SpongeBob SquarePants",	["Nickelodeon", "Viacom International", "Paramount Global"]));
+array_push(CREDIT,	new CreditData("Wallace and Gromit",		"Aardman Animations"));
 
 globalvar ENCYCLOPEDIA;
 ENCYCLOPEDIA = []
@@ -91,3 +99,5 @@ array_push(ENCYCLOPEDIA, new EncyclopediaData("T2", "Player 2's team"));
 array_push(ENCYCLOPEDIA, new EncyclopediaData("Point Character", "The main character on each team, selected first. Also known as the character that initiates interactions with Player 2's Point Character."));
 array_push(ENCYCLOPEDIA, new EncyclopediaData("Mid Character", "The character selected second on a team."));
 array_push(ENCYCLOPEDIA, new EncyclopediaData("Anchor Character", "The character selected third on a team."));
+
+room_goto_next()
