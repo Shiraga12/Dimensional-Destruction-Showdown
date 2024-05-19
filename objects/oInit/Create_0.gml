@@ -78,12 +78,17 @@ array_push(STAGE,	new StageData("Villains Reality",													"A desolate wast
 globalvar CREDIT;
 CREDIT = []
 // Team
+array_push(CREDIT,	new CreditData("TEAM",""))
+array_push(CREDIT,	new CreditData("",""))
 array_push(CREDIT,	new CreditData("Project Lead",				["Kio"]))
 array_push(CREDIT,	new CreditData("Programmers",				["Shiraga",			"Sato",	"BadGameDev",	"Joshus_sarn",	"Whisperer"]))
 array_push(CREDIT,	new CreditData("Artists",						["Kio",	"arli",				"Spyder, 愚かな性交",	"Lucien Sawaqov",	"The Elite"]))
 array_push(CREDIT,	new CreditData("Concept Designers",		["Kio",	"CrockerJack",		"Freaky Chips"]))
 array_push(CREDIT,	new CreditData("Composers",					["SubjectLoser"]))
 // Character/Stage Credit
+array_push(CREDIT,	new CreditData("",""))
+array_push(CREDIT,	new CreditData("Licensed Properites",""))
+array_push(CREDIT,	new CreditData("",""))
 array_push(CREDIT,	new CreditData("Dexter's Laboratory",		["Cartoon Network", "Warner Bros. Discovery"]));
 array_push(CREDIT,	new CreditData("Mickey Mouse",				"Disney"));
 array_push(CREDIT,	new CreditData("PAC-MAN",					"Bandai Namco Entertainment"));
