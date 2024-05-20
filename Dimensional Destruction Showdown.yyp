@@ -29,6 +29,8 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"Background1.png","CopyToMask":-1,"filePath":"datafiles/Backgrounds","name":"Background1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"MoonBackgroundYESYES.png","CopyToMask":-1,"filePath":"datafiles/Backgrounds","name":"MoonBackgroundYESYES.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Malachi_Alt_1.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Malachi and Darla","name":"Malachi_Alt_1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Malachi_Alt_2.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Malachi and Darla","name":"Malachi_Alt_2.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Malachi_Alt_3.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Malachi and Darla","name":"Malachi_Alt_3.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -72,8 +74,10 @@
     {"id":{"name":"oGround","path":"objects/oGround/oGround.yy",},},
     {"id":{"name":"oInit","path":"objects/oInit/oInit.yy",},},
     {"id":{"name":"oP1","path":"objects/oP1/oP1.yy",},},
+    {"id":{"name":"oP2","path":"objects/oP2/oP2.yy",},},
     {"id":{"name":"oPlayerTemplate","path":"objects/oPlayerTemplate/oPlayerTemplate.yy",},},
     {"id":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
+    {"id":{"name":"rmDisclaimer","path":"rooms/rmDisclaimer/rmDisclaimer.yy",},},
     {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
     {"id":{"name":"rmTestingRoom","path":"rooms/rmTestingRoom/rmTestingRoom.yy",},},
     {"id":{"name":"CharacterData","path":"scripts/CharacterData/CharacterData.yy",},},
@@ -99,6 +103,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
+    {"roomId":{"name":"rmDisclaimer","path":"rooms/rmDisclaimer/rmDisclaimer.yy",},},
     {"roomId":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
     {"roomId":{"name":"rmTestingRoom","path":"rooms/rmTestingRoom/rmTestingRoom.yy",},},
   ],
