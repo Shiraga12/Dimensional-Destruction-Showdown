@@ -904,8 +904,8 @@
   "maintainGms1Font":false,
   "name":"Font1",
   "parent":{
-    "name":"Sequences",
-    "path":"folders/Sequences.yy",
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[
