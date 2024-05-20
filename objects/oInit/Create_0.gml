@@ -101,13 +101,13 @@ array_push(CREDIT,	new CreditData("SpongeBob SquarePants",	["Nickelodeon", "Viac
 array_push(CREDIT,	new CreditData("Wallace and Gromit",		"Aardman Animations"));
 
 globalvar ENCYCLOPEDIA;
-ENCYCLOPEDIA = [[]]
-array_push(ENCYCLOPEDIA[0], new EncyclopediaData("T", "Team"));
-array_push(ENCYCLOPEDIA[0], new EncyclopediaData("T1", "Player 1's team"));
-array_push(ENCYCLOPEDIA[0], new EncyclopediaData("T2", "Player 2's team"));
-array_push(ENCYCLOPEDIA[0], new EncyclopediaData("Point Character", "The main character on each team, selected first. Also known as the character that initiates interactions with Player 2's Point Character."));
-array_push(ENCYCLOPEDIA[0], new EncyclopediaData("Mid Character", "The character selected second on a team."));
-array_push(ENCYCLOPEDIA[0], new EncyclopediaData("Anchor Character", "The character selected third on a team."));
+ENCYCLOPEDIA = [[],[],[]]
+array_push(ENCYCLOPEDIA[0], new EncyclopediaData("T",						"Team"));
+array_push(ENCYCLOPEDIA[0], new EncyclopediaData("T1",					"Player 1's team"));
+array_push(ENCYCLOPEDIA[0], new EncyclopediaData("T2",					"Player 2's team"));
+array_push(ENCYCLOPEDIA[0], new EncyclopediaData("Point Character",	"The main character on each team, selected first. Also known as the character that initiates interactions with Player 2's Point Character."));
+array_push(ENCYCLOPEDIA[0], new EncyclopediaData("Mid Character",		"The character selected second on a team."));
+array_push(ENCYCLOPEDIA[0], new EncyclopediaData("Anchor Character",	"The character selected third on a team."));
 
 array_push(ENCYCLOPEDIA[1], new EncyclopediaData("SpongeBob SquarePants",	"Name: SpongeBob SquarePants \n\nUniverse: SpongeBob SquarePants \n\nFirst Appearance: Help Wanted (1999) \nVoice Actor: Tom Kenny (Official) / NA (In-game) \n\nOccupation: Fry Cook at the Krusty Krab \n\nWeapons / Abilites: Ol' Reliable, KA-RAE-TAE Gear, his trusty spatula, his bubbles \n\nProfile: SpongeBob is a sea sponge who lives in a pineapple under the sea in a place called Bikini Bottom. He works as a fry cook in the restaurant owned by Mr. Krabs called the Krusty Krab, where they create one of the most iconic foods in animation, the Krabby Patty. SpongeBob’s always friendly, but can be a bit naive and likeable stupidity, even if those people don’t like him back. No matter how much people don’t like him, he will ALWAYS be ready for anything that he gets thrown at. \n\nRival: Ruby Gillman (This section only appears after the Arcade Mode / Final update) \n\nTechnical: \n\nArchetype: All-Rounder \n\nStats (Working on it) \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References: (After Arcade Mode / Final Update) \n\nFight 1: Pink Kraid is meant to represent Patrick Star \nFight 2: Brown Shrek is meant to represent Bubble Bass"))
 array_push(ENCYCLOPEDIA[1], new EncyclopediaData("Mickey Mouse",				"Name: Mickey Mouse \n\nUniverse: Disney \n\nFirst Appearance: Steamboat Willie (1928) \nVoice Actor: Bret Iwan (Official) / NA (In-game) \n\nOccupation: Adventurer, Mascot \n\nWeapons / Abilities: Paintbrush, Magical Brush, Quick Reflexes \n\nProfile: Mickey Mouse is one of the most iconic and beloved characters in the world. As Disney's mascot, he has been part of countless adventures and stories, bringing joy to millions. Mickey's courageous and clever nature makes him a formidable fighter and a joy to watch. \n\nRival: Pete \n\nTechnical: \n\nArchetype: Rush-Down - Footsie \n\nStats: \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References:"));
