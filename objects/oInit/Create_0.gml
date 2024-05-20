@@ -85,9 +85,9 @@ CREDIT = []
 array_push(CREDIT,	new CreditData("TEAM",""))
 array_push(CREDIT,	new CreditData("",""))
 array_push(CREDIT,	new CreditData("Project Lead",				["Kio"]))
-array_push(CREDIT,	new CreditData("Programmers",				["Shiraga",			"Sato",	"BadGameDev",	"Joshus_sarn",	"Whisperer"]))
-array_push(CREDIT,	new CreditData("Artists",						["Kio",	"arli",				"Spyder",	"Lucien Sawaqov",	"The Elite"]))
-array_push(CREDIT,	new CreditData("Concept Designers",		["Kio",	"CrockerJack",		"Freaky Chips"]))
+array_push(CREDIT,	new CreditData("Programmers",				["Shiraga",	"Sato",			"BadGameDev",	"Joshus_sarn",		"Whisperer"]))
+array_push(CREDIT,	new CreditData("Artists",						["Kio",			"arli",				"Spyder",			"Lucien Sawaqov",	"The Elite"]))
+array_push(CREDIT,	new CreditData("Concept Designers",		["Kio",			"CrockerJack",	"Freaky Chips"]))
 array_push(CREDIT,	new CreditData("Composers",					["SubjectLoser"]))
 // Licensed Properites:
 array_push(CREDIT,	new CreditData("",""))
