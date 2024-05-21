@@ -85,6 +85,7 @@
     {"id":{"name":"oP1","path":"objects/oP1/oP1.yy",},},
     {"id":{"name":"oP2","path":"objects/oP2/oP2.yy",},},
     {"id":{"name":"oPlayerTemplate","path":"objects/oPlayerTemplate/oPlayerTemplate.yy",},},
+    {"id":{"name":"oShop","path":"objects/oShop/oShop.yy",},},
     {"id":{"name":"rmCredits","path":"rooms/rmCredits/rmCredits.yy",},},
     {"id":{"name":"rmDisclaimer","path":"rooms/rmDisclaimer/rmDisclaimer.yy",},},
     {"id":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
