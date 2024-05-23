@@ -5,7 +5,7 @@
   "bbox_bottom":1599,
   "bbox_left":0,
   "bbox_right":1521,
-  "bbox_top":36,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -22,6 +22,10 @@
     {"$GMSpriteFrame":"","%Name":"161b95ce-6755-4365-8dbe-49f9c03a396b","name":"161b95ce-6755-4365-8dbe-49f9c03a396b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"d053f5a6-dbec-426b-ad5b-f65f0803a4d5","name":"d053f5a6-dbec-426b-ad5b-f65f0803a4d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"3743ce79-f116-43ca-a050-c5839fac9deb","name":"3743ce79-f116-43ca-a050-c5839fac9deb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"4ebffefc-a194-4caa-8c2c-b04a478cfb23","name":"4ebffefc-a194-4caa-8c2c-b04a478cfb23","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"cfbcd642-b514-4885-ace2-94fff9f8d5e6","name":"cfbcd642-b514-4885-ace2-94fff9f8d5e6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6d493768-be63-4b3d-b965-136a5de678ae","name":"6d493768-be63-4b3d-b965-136a5de678ae","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0375358e-b122-4afe-b77c-881e2ee4deb6","name":"0375358e-b122-4afe-b77c-881e2ee4deb6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -58,7 +62,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":10.0,
+    "length":14.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -107,6 +111,18 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3743ce79-f116-43ca-a050-c5839fac9deb","path":"sprites/sMalachiDarlaPortrait/sMalachiDarlaPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"810a0723-272c-4566-a1a5-5b638961621e","IsCreationKey":false,"Key":9.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4ebffefc-a194-4caa-8c2c-b04a478cfb23","path":"sprites/sMalachiDarlaPortrait/sMalachiDarlaPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"89eccd1f-c85c-4fd0-9f9c-28ef056adf74","IsCreationKey":false,"Key":10.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cfbcd642-b514-4885-ace2-94fff9f8d5e6","path":"sprites/sMalachiDarlaPortrait/sMalachiDarlaPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5a73806f-a977-4664-a2aa-39dfa5920896","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6d493768-be63-4b3d-b965-136a5de678ae","path":"sprites/sMalachiDarlaPortrait/sMalachiDarlaPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f77cda76-02ba-4e99-a265-b0b5820b1181","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0375358e-b122-4afe-b77c-881e2ee4deb6","path":"sprites/sMalachiDarlaPortrait/sMalachiDarlaPortrait.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"50ee2a64-35df-4b93-b41f-48c70bd29147","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
