@@ -1,7 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 /// @desc Constructor for TeamData, which holds information about a team in a 3v3 2D fighting game.
-function TeamData() constructor {
+function TeamData(_CONTROLS = 0) constructor {
+	CONTROLS = _CONTROLS
+	
 	ORDER = [
 		{ CHAR: -1, HP: 100 },
 		{ CHAR: -1, HP: 100 },

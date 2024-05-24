@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"oP1",
+  "%Name":"oP2LeaderHealthBar",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":{"name":"oP2","path":"objects/oP2/oP2.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oP1",
+  "name":"oP2LeaderHealthBar",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"HUD",
+    "path":"folders/Objects/HUD.yy",
   },
   "parentObjectId":{
-    "name":"oPlayerTemplate",
-    "path":"objects/oPlayerTemplate/oPlayerTemplate.yy",
+    "name":"oLeaderHealthBar",
+    "path":"objects/oLeaderHealthBar/oLeaderHealthBar.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sLeaderHealthBarInside",
+    "path":"sprites/sLeaderHealthBarInside/sLeaderHealthBarInside.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
