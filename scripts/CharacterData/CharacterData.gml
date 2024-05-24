@@ -11,7 +11,7 @@
 /// @param {string}							_RIVAL				-	The rival character.
 /// @param {string}							_FIRST_APPEARANCE	-	The first appearance of the character.
 /// @param {string}							_ARCHETYPE			-	The archetype of the character.
-function CharacterData(_NAME, _DESCRIPTION, _SERIES, _TYPE, _MOVES = [], _SPRITES = {}, _VA = "N/A", _RIVAL = "N/A", _FIRST_APPEARANCE = "N/A", _ARCHETYPE = "N/A") constructor{
+function CharacterData(_NAME, _DESCRIPTION, _SERIES, _TYPE, _MOVES = [], _SPRITES = {}, _VA = "N/A", _RIVAL = "N/A", _FIRST_APPEARANCE = "N/A", _ARCHETYPE = "N/A", _LOCKED = false) constructor{
 	NAME					=   _NAME;
 	DESCRIPTION			=   _DESCRIPTION;
 	SERIES				=   _SERIES;
@@ -22,6 +22,7 @@ function CharacterData(_NAME, _DESCRIPTION, _SERIES, _TYPE, _MOVES = [], _SPRITE
 	RIVAL					=	_RIVAL
 	FIRST_APPEARANCE	=	_FIRST_APPEARANCE
 	ARCHETYPE			=	_ARCHETYPE
+	LOCKED				=	_LOCKED
 
 	static getNAME					=	function()						{	return NAME;										};
 	static getDESCRIPTION			=	function()						{	return DESCRIPTION;								};
@@ -35,6 +36,7 @@ function CharacterData(_NAME, _DESCRIPTION, _SERIES, _TYPE, _MOVES = [], _SPRITE
 	static getRIVAL					=	function()						{	return RIVAL;										};
 	static getFIRST_APPEARANCE	=	function()						{	return FIRST_APPEARANCE;						};
 	static getARCHETYPE			=	function()						{	return ARCHETYPE;									};
+	static getLOCKED				=	function()						{	return LOCKED;										};
 					
 	static getMOVESET_COUNT		=   function()						{	return array_length(MOVES);						};
 					
@@ -49,6 +51,9 @@ function CharacterData(_NAME, _DESCRIPTION, _SERIES, _TYPE, _MOVES = [], _SPRITE
 	static setRIVAL					=	function(_RIVAL)				{	RIVAL					=	_RIVAL;					};
 	static setFIRST_APPEARANCE	=	function(_FIRST_APPEARANCE)	{	FIRST_APPEARANCE	=	_FIRST_APPEARANCE;	};
 	static setARCHETYPE			=	function(_ARCHETYPE)			{	ARCHETYPE			=	_ARCHETYPE;				};
+	static setLOCKED				=	function(_LOCKED)				{	LOCKED				=	_LOCKED;					};
 	
 	static addMOVE					=	function(_MOVE)					{	array_push(MOVES, _MOVE);						};
+	
+	static unlock					=	function()						{	LOCKED				=	false						};
 }

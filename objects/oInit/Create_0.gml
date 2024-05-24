@@ -2,51 +2,55 @@
 // CREATE Event - oINIT
 
 globalvar T1, T2, TIME;
-T1		=	new TeamData() 
-T2		=	new TeamData() 
-TIME	=	90
-#macro MAX_HEALTH 100
+T1							=	new TeamData() 
+T2							=	new TeamData() 
+TIME						=	90
+#macro MAX_HEALTH	100
 
-#macro SCREEN_WIDTH			1366
-#macro SCREEN_HEIGHT		768
-#macro SCREEN_WIDTH_HALF	SCREEN_WIDTH	/	2
-#macro SCREEN_HEIGHT_HALF	SCREEN_HEIGHT	/	2
-
-#macro KEY				keyboard_check
-#macro KEY_PRESSED	keyboard_check_pressed
-#macro KEY_RELEASED	keyboard_check_released
-
-#macro GAMEPAD				gamepad_button_check
-#macro GAMEPAD_PRESSED		gamepad_button_check_pressed
-#macro GAMEPAD_RELEASED	gamepad_button_check_released
-#macro GAMEPAD_AXIS			gamepad_axis_value
-
-// Player 1
-#macro P1_KEYLEFT		max(KEY(ord("A")),			GAMEPAD(0,				gp_padl),		GAMEPAD_AXIS(0,gp_axislh),	0)
-#macro P1_KEYRIGHT		max(KEY(ord("D")),			GAMEPAD(0,				gp_padr),		-GAMEPAD_AXIS(0,gp_axislh),	0)
-#macro P1_KEYJUMP		max(KEY(ord("W")),			GAMEPAD(0,				gp_padu),		-GAMEPAD_AXIS(0,gp_axislv),	0)
-#macro P1_KEYCROUCH		max(KEY(ord("S")),			GAMEPAD(0,				gp_padd),		GAMEPAD_AXIS(0,gp_axislv),	0)
-#macro P1_KEYLP			max(KEY(ord("J")),			GAMEPAD(0,				gp_face1))
-#macro P1_KEYLK			max(KEY(ord("K")),			GAMEPAD(0,				gp_face2))
-#macro P1_KEYHP			max(KEY(ord("U")),			GAMEPAD(0,				gp_face3))
-#macro P1_KEYHK			max(KEY(ord("I")),			GAMEPAD(0,				gp_face4))
-#macro P1_KEYASSIST1	max(KEY(ord("L")),			GAMEPAD(0,				gp_shoulderl))
-#macro P1_KEYASSIST2	max(KEY(ord("O")),			GAMEPAD(0,				gp_shoulderr))
-#macro P1_KEYSWAP		max(KEY(ord("P")),			GAMEPAD_PRESSED(0,	gp_shoulderrb))
-#macro P1_KEYSTART		max(KEY(ord("ENTER")),		GAMEPAD_PRESSED(0,	gp_start))
-// Player 2
-#macro P2_KEYLEFT		max(KEY(ord("LEFT")),		GAMEPAD(1,				gp_padl),		GAMEPAD_AXIS(1, gp_axislh),	0)
-#macro P2_KEYRIGHT		max(KEY(ord("RIGHT")),		GAMEPAD(1,				gp_padr),		-GAMEPAD_AXIS(1, gp_axislh),	0)
-#macro P2_KEYJUMP		max(KEY(ord("UP")),			GAMEPAD(1,				gp_padu),		-GAMEPAD_AXIS(1, gp_axislv),	0)
-#macro P2_KEYCROUCH		max(KEY(ord("DOWN")),		GAMEPAD(1,				gp_padd),		GAMEPAD_AXIS(1, gp_axislv),	0)
-#macro P2_KEYLP			max(KEY(ord("NUMPAD1")),	GAMEPAD(1,				gp_face1))
-#macro P2_KEYLK			max(KEY(ord("NUMPAD2")),	GAMEPAD(1,				gp_face2))
-#macro P2_KEYHP			max(KEY(ord("NUMPAD4")),	GAMEPAD(1,				gp_face3))
-#macro P2_KEYHK			max(KEY(ord("NUMPAD5")),	GAMEPAD(1,				gp_face4))
-#macro P2_KEYASSIST1	max(KEY(ord("NUMPAD3")),	GAMEPAD(1,				gp_shoulderl))
-#macro P2_KEYASSIST2	max(KEY(ord("NUMPAD0")),	GAMEPAD(1,				gp_shoulderr))
-#macro P2_KEYSWAP		max(KEY(ord("DECIMAL")),	GAMEPAD_PRESSED(1,	gp_shoulderrb))
-#macro P2_KEYSTART		max(KEY(ord("RETURN")),	GAMEPAD_PRESSED(1,	gp_start))
+/*	Screen		*/	{
+	#macro SCREEN_WIDTH			1366
+	#macro SCREEN_HEIGHT		768
+	#macro SCREEN_WIDTH_HALF	SCREEN_WIDTH	/	2
+	#macro SCREEN_HEIGHT_HALF	SCREEN_HEIGHT	/	2
+}
+/*	Controls		*/	{
+	#macro KEY				keyboard_check
+	#macro KEY_PRESSED	keyboard_check_pressed
+	#macro KEY_RELEASED	keyboard_check_released
+	
+	#macro GAMEPAD				gamepad_button_check
+	#macro GAMEPAD_PRESSED		gamepad_button_check_pressed
+	#macro GAMEPAD_RELEASED	gamepad_button_check_released
+	#macro GAMEPAD_AXIS			gamepad_axis_value
+	
+	// Player 1
+	#macro P1_KEYLEFT		max(KEY(ord("A")),			GAMEPAD(0,				gp_padl),		GAMEPAD_AXIS(0,gp_axislh),	0)
+	#macro P1_KEYRIGHT		max(KEY(ord("D")),			GAMEPAD(0,				gp_padr),		-GAMEPAD_AXIS(0,gp_axislh),	0)
+	#macro P1_KEYJUMP		max(KEY(ord("W")),			GAMEPAD(0,				gp_padu),		-GAMEPAD_AXIS(0,gp_axislv),	0)
+	#macro P1_KEYCROUCH		max(KEY(ord("S")),			GAMEPAD(0,				gp_padd),		GAMEPAD_AXIS(0,gp_axislv),	0)
+	#macro P1_KEYLP			max(KEY(ord("J")),			GAMEPAD(0,				gp_face1))
+	#macro P1_KEYLK			max(KEY(ord("K")),			GAMEPAD(0,				gp_face2))
+	#macro P1_KEYHP			max(KEY(ord("U")),			GAMEPAD(0,				gp_face3))
+	#macro P1_KEYHK			max(KEY(ord("I")),			GAMEPAD(0,				gp_face4))
+	#macro P1_KEYASSIST1	max(KEY(ord("L")),			GAMEPAD(0,				gp_shoulderl))
+	#macro P1_KEYASSIST2	max(KEY(ord("O")),			GAMEPAD(0,				gp_shoulderr))
+	#macro P1_KEYSWAP		max(KEY(ord("P")),			GAMEPAD_PRESSED(0,	gp_shoulderrb))
+	#macro P1_KEYSTART		max(KEY(ord("ENTER")),		GAMEPAD_PRESSED(0,	gp_start))
+	
+	// Player 2
+	#macro P2_KEYLEFT		max(KEY(ord("LEFT")),		GAMEPAD(1,				gp_padl),		GAMEPAD_AXIS(1, gp_axislh),	0)
+	#macro P2_KEYRIGHT		max(KEY(ord("RIGHT")),		GAMEPAD(1,				gp_padr),		-GAMEPAD_AXIS(1, gp_axislh),	0)
+	#macro P2_KEYJUMP		max(KEY(ord("UP")),			GAMEPAD(1,				gp_padu),		-GAMEPAD_AXIS(1, gp_axislv),	0)
+	#macro P2_KEYCROUCH		max(KEY(ord("DOWN")),		GAMEPAD(1,				gp_padd),		GAMEPAD_AXIS(1, gp_axislv),	0)
+	#macro P2_KEYLP			max(KEY(ord("NUMPAD1")),	GAMEPAD(1,				gp_face1))
+	#macro P2_KEYLK			max(KEY(ord("NUMPAD2")),	GAMEPAD(1,				gp_face2))
+	#macro P2_KEYHP			max(KEY(ord("NUMPAD4")),	GAMEPAD(1,				gp_face3))
+	#macro P2_KEYHK			max(KEY(ord("NUMPAD5")),	GAMEPAD(1,				gp_face4))
+	#macro P2_KEYASSIST1	max(KEY(ord("NUMPAD3")),	GAMEPAD(1,				gp_shoulderl))
+	#macro P2_KEYASSIST2	max(KEY(ord("NUMPAD0")),	GAMEPAD(1,				gp_shoulderr))
+	#macro P2_KEYSWAP		max(KEY(ord("DECIMAL")),	GAMEPAD_PRESSED(1,	gp_shoulderrb))
+	#macro P2_KEYSTART		max(KEY(ord("RETURN")),	GAMEPAD_PRESSED(1,	gp_start))
+}
 
 /*	Modes		*/	{
 	globalvar MODES;
@@ -58,46 +62,70 @@ TIME	=	90
 /*	Characters	*/	{
 	globalvar CHARACTER;
 	CHARACTER = [];
-	array_push(CHARACTER,	new CharacterData("Malachi and Darla",			"A completely original character duo with distinct abilities and a mysterious past. Malachi, the cunning tactician, and Darla, the fierce warrior, bring a unique dynamic to the battlefield.",													"Original Generation",						"Gimmick Fighter",		[],	{
+	
+	array_push(CHARACTER,	new CharacterData("Malachi and Darla",			"A completely original character duo with distinct abilities and a mysterious past. Malachi, the cunning tactician, and Darla, the fierce warrior, bring a unique dynamic to the battlefield.",													"Original Generation",						"Gimmick Fighter"))	
+	CHARACTER[0].SPRITES	=	{
 		Portrait: sMalachiDarlaPortrait,
-	}));
-	array_push(CHARACTER,	new CharacterData("SpongeBob SquarePants",	"The optimistic and enthusiastic sea sponge who lives in a pineapple under the sea. Known for his infectious energy and unwavering positivity, SpongeBob is always ready for a new adventure.",											"SpongeBob SquarePants",					"All-Rounder",			[],	{
+	}
+	
+	array_push(CHARACTER,	new CharacterData("SpongeBob SquarePants",	"The optimistic and enthusiastic sea sponge who lives in a pineapple under the sea. Known for his infectious energy and unwavering positivity, SpongeBob is always ready for a new adventure.",											"SpongeBob SquarePants",					"All-Rounder"))
+	CHARACTER[1].SPRITES	=	{
 		Portrait: sSpongeBobPortrait,
-	}));
-	array_push(CHARACTER,	new CharacterData("Mickey Mouse",				"The legendary Disney character in his adventurous form. Mickey Mouse is beloved worldwide for his courage, cleverness, and ability to bring joy to those around him.",																		"Epic Mickey",								"Rush-Down - Footsie",	[],	{
+	};
+	
+	array_push(CHARACTER,	new CharacterData("Mickey Mouse",				"The legendary Disney character in his adventurous form. Mickey Mouse is beloved worldwide for his courage, cleverness, and ability to bring joy to those around him.",																		"Epic Mickey",								"Rush-Down - Footsie"));
+	CHARACTER[2].SPRITES	=	{
 		Portrait: sMickeyPortrait,
-	}));
-	array_push(CHARACTER,	new CharacterData("Dexter and Dee Dee",		"Dexter, the boy genius with a secret laboratory, and his meddlesome sister Dee Dee from the animated series Dexter's Laboratory. Together, they create a mix of brilliant inventions and chaotic antics.",							"Dexter's Laboratory",					"Zoner",					[],	{}));
-	array_push(CHARACTER,	new CharacterData("Shrek",						"The lovable ogre from the swamp with a heart of gold. Shrek may appear gruff, but he's a true hero who values friendship and courage above all.",																								"Shrek",										"Grappler",				[],	{}));
-	array_push(CHARACTER,	new CharacterData("Wallace and Gromit",		"The eccentric inventor Wallace and his intelligent dog Gromit, known for their quirky and ingenious adventures. Their inventive spirit and teamwork make them a beloved duo.",																"Wallace and Gromit",						"Trapper",				[],	{}));
-	array_push(CHARACTER,	new CharacterData("PAC-MAN",					"The classic arcade character who navigates mazes, eats pellets, and avoids ghosts. PAC-MAN is an enduring icon of video gaming, known for his timeless gameplay and charming design.",													"Pac-Man",									"Mid-Range Offensive",	[],	{
+	}
+	
+	array_push(CHARACTER,	new CharacterData("Dexter and Dee Dee",		"Dexter, the boy genius with a secret laboratory, and his meddlesome sister Dee Dee from the animated series Dexter's Laboratory. Together, they create a mix of brilliant inventions and chaotic antics.",							"Dexter's Laboratory",					"Zoner"));
+	array_push(CHARACTER,	new CharacterData("Shrek",						"The lovable ogre from the swamp with a heart of gold. Shrek may appear gruff, but he's a true hero who values friendship and courage above all.",																								"Shrek",										"Grappler"));
+	array_push(CHARACTER,	new CharacterData("Wallace and Gromit",		"The eccentric inventor Wallace and his intelligent dog Gromit, known for their quirky and ingenious adventures. Their inventive spirit and teamwork make them a beloved duo.",																"Wallace and Gromit",						"Trapper"));
+	
+	array_push(CHARACTER,	new CharacterData("PAC-MAN",					"The classic arcade character who navigates mazes, eats pellets, and avoids ghosts. PAC-MAN is an enduring icon of video gaming, known for his timeless gameplay and charming design.",													"Pac-Man",									"Mid-Range Offensive"));
+	CHARACTER[6].SPRITES	=	{
 		Portrait: sPACMANPortrait,
-	}));
+	}
+	
 	array_push(CHARACTER,	new CharacterData("Pac-Man",					"The reimagined version of PAC-MAN from the Pac-Man and the Ghostly Adventures series. This modern take on the classic character brings new adventures and a fresh look to the iconic hero.",										"Pac-Man and the Ghostly Adventures",	"Pseudo-Stance",		[],	{}));
-	array_push(CHARACTER,	new CharacterData("Cuphead",					"Cuphead, the impulsive hero from the acclaimed indie game, battles his way through surreal worlds to repay his debt to the devil. With his classic cartoon style and challenging gameplay, he brings a unique flair to the fight.",	"Cuphead",									"",							[],	{
+	
+	array_push(CHARACTER,	new CharacterData("Cuphead",					"Cuphead, the impulsive hero from the acclaimed indie game, battles his way through surreal worlds to repay his debt to the devil. With his classic cartoon style and challenging gameplay, he brings a unique flair to the fight.",	"Cuphead",									""));
+	CHARACTER[8].SPRITES	=	{
 		Portrait: sCupheadPortrait,
-	}));
-	array_push(CHARACTER,	new CharacterData("Mugman",					"Mugman, Cuphead’s cautious and loyal brother, joins the fray with his own set of skills. Together, they tackle formidable foes in a quest for redemption, showcasing teamwork and determination.",									"Cuphead",									"",							[],	{
+	}
+	
+	array_push(CHARACTER,	new CharacterData("Mugman",					"Mugman, Cuphead’s cautious and loyal brother, joins the fray with his own set of skills. Together, they tackle formidable foes in a quest for redemption, showcasing teamwork and determination.",									"Cuphead",									""));
+	CHARACTER[9].SPRITES	=	{
 		Portrait: sMugmanPortrait,
-	}));
-	array_push(CHARACTER,	new CharacterData("Muffet",					"Description here!",																																																															"Original Generation",						"",							[],	{
+	}
+	
+	array_push(CHARACTER,	new CharacterData("Muffet",					"Description here!",																																																															"Original Generation",						""));
+	CHARACTER[10].SPRITES	=	{
 		Portrait: sMuffetPortrait,
-	}));
-	array_push(CHARACTER,	new CharacterData("Skull Kid",					"Skull Kid, a mischievous character from the Zelda series, wields the powerful Majora's Mask. With his trickster nature and dark magic, he brings chaos and unpredictability to any battle.",												"The Legend of Zelda",						"",							[],	{
+	}
+	
+	array_push(CHARACTER,	new CharacterData("Skull Kid",					"Skull Kid, a mischievous character from the Zelda series, wields the powerful Majora's Mask. With his trickster nature and dark magic, he brings chaos and unpredictability to any battle.",												"The Legend of Zelda",						""));
+	CHARACTER[11].SPRITES	=	{
 		Portrait: sSkullKidPortrait,
-	}));
-	array_push(CHARACTER,	new CharacterData("Mettaton",					"Description here!",																																																															"Original Generation",						"",							[],	{
+	}
+	
+	array_push(CHARACTER,	new CharacterData("Mettaton",					"Description here!",																																																															"Original Generation",						""));
+	CHARACTER[12].SPRITES	=	{
 		Portrait: sMettatonPortrait,
-	}));
-	array_push(CHARACTER,	new CharacterData("Mettaton EX",				"Description here!",																																																															"Original Generation",						"",							[],	{
+	}
+	
+	array_push(CHARACTER,	new CharacterData("Mettaton EX",				"Description here!",																																																															"Original Generation",						""));
+	CHARACTER[13].SPRITES	=	{
 		Portrait: sMettatonEXPortrait,
-	}));
-	array_push(CHARACTER,	new CharacterData("Jenny Wakeman",			"Jenny Wakeman, also known as XJ-9, is a teenage robot designed to protect Earth. Balancing her superhero duties with the trials of teenage life, Jenny uses her advanced technology and gadgets to fight for justice.",			"My Life as a Teenage Robot",			"",							[],	{
-		Portrait: noone,
+	}
+	
+	array_push(CHARACTER,	new CharacterData("Jenny Wakeman",			"Jenny Wakeman, also known as XJ-9, is a teenage robot designed to protect Earth. Balancing her superhero duties with the trials of teenage life, Jenny uses her advanced technology and gadgets to fight for justice.",			"My Life as a Teenage Robot",			""));
+	CHARACTER[14].SPRITES	=	{
+		Portrait:	noone,
 		AlternatePortrait: {
 			A: sJennyWakemanPortraitAltA
 		},
-	}));
+	}
 }
 /*	Stages		*/	{
 	globalvar STAGE;
@@ -123,22 +151,22 @@ TIME	=	90
 	array_push(CREDIT,	new CreditData("Project Lead",				["Kio"]))
 	array_push(CREDIT,	new CreditData("Programmers",				["Shiraga",	"Sato",			"BadGameDev",	"Joshus_sarn",		"Whisperer"]))
 	array_push(CREDIT,	new CreditData("Artists",						["Kio",			"arli",				"Spyder",			"Lucien Sawaqov",	"The Elite"]))
-	array_push(CREDIT,	new CreditData("Concept Designers",			["Kio",			"CrockerJack",	"Freaky Chips"]))
+	array_push(CREDIT,	new CreditData("Concept Designers",		["Kio",			"CrockerJack",	"Freaky Chips"]))
 	array_push(CREDIT,	new CreditData("Composers",					["SubjectLoser"]))
 	// Licensed Properites:
 	array_push(CREDIT,	new CreditData("",""))
 	array_push(CREDIT,	new CreditData("Licensed Properites",""))
 	array_push(CREDIT,	new CreditData("",""))
-	array_push(CREDIT,	new CreditData("Dexter's Laboratory (Dexter & DeeDee)",		["Cartoon Network", "Warner Bros. Discovery"]));
-	array_push(CREDIT,	new CreditData("Mickey Mouse (Character)",						"Disney"));
-	array_push(CREDIT,	new CreditData("PAC-MAN (Character)",								"Bandai Namco Entertainment"));
+	array_push(CREDIT,	new CreditData("Dexter's Laboratory (Dexter & DeeDee)",			["Cartoon Network", "Warner Bros. Discovery"]));
+	array_push(CREDIT,	new CreditData("Mickey Mouse (Character)",							"Disney"));
+	array_push(CREDIT,	new CreditData("PAC-MAN (Character)",									"Bandai Namco Entertainment"));
 	array_push(CREDIT,	new CreditData("Shrek (Character)",									"DreamWorks Animation LLC"));
-	array_push(CREDIT,	new CreditData("SpongeBob SquarePants (Character)",			["Nickelodeon", "Viacom International", "Paramount Global"]));
-	array_push(CREDIT,	new CreditData("My Life as a Teenage Robot (Jenny Wakeman)",	["Nickelodeon", "Viacom International", "Paramount Global"]));
-	array_push(CREDIT,	new CreditData("Cuphead (Cuphead and Mugman)",					"Studio MDHR"));
-	array_push(CREDIT,	new CreditData("The Legend of Zelda (Skull Kid)",					"Nintendo"));
-	array_push(CREDIT,	new CreditData("Paper Mario (Vivian)",								"Nintendo"));
-	array_push(CREDIT,	new CreditData("Wallace and Gromit (Character)",					"Aardman Animations"));
+	array_push(CREDIT,	new CreditData("SpongeBob SquarePants (Character)",				["Nickelodeon",	"Viacom International",	"Paramount Global"]));
+	array_push(CREDIT,	new CreditData("My Life as a Teenage Robot (Jenny Wakeman)",	["Nickelodeon",	"Viacom International",	"Paramount Global"]));
+	array_push(CREDIT,	new CreditData("Cuphead (Cuphead and Mugman)",						"Studio MDHR"));
+	array_push(CREDIT,	new CreditData("The Legend of Zelda (Skull Kid)",						"Nintendo"));
+	array_push(CREDIT,	new CreditData("Paper Mario (Vivian)",									"Nintendo"));
+	array_push(CREDIT,	new CreditData("Wallace and Gromit (Character)",						"Aardman Animations"));
 }
 /*	Encyclopedia	*/	{
 	globalvar ENCYCLOPEDIA;
@@ -152,8 +180,8 @@ TIME	=	90
 	
 	array_push(ENCYCLOPEDIA[1], new EncyclopediaData("SpongeBob SquarePants",	"Name: SpongeBob SquarePants \n\nUniverse: SpongeBob SquarePants \n\nFirst Appearance: Help Wanted (1999) \nVoice Actor: Tom Kenny (Official) / NA (In-game) \n\nOccupation: Fry Cook at the Krusty Krab \n\nWeapons / Abilites: Ol' Reliable, KA-RAE-TAE Gear, his trusty spatula, his bubbles \n\nProfile: SpongeBob is a sea sponge who lives in a pineapple under the sea in a place called Bikini Bottom. He works as a fry cook in the restaurant owned by Mr. Krabs called the Krusty Krab, where they create one of the most iconic foods in animation, the Krabby Patty. SpongeBob’s always friendly, but can be a bit naive and likeable stupidity, even if those people don’t like him back. No matter how much people don’t like him, he will ALWAYS be ready for anything that he gets thrown at. \n\nRival: Ruby Gillman (This section only appears after the Arcade Mode / Final update) \n\nTechnical: \n\nArchetype: All-Rounder \n\nStats (Working on it) \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References: (After Arcade Mode / Final Update) \n\nFight 1: Pink Kraid is meant to represent Patrick Star \nFight 2: Brown Shrek is meant to represent Bubble Bass"))
 	array_push(ENCYCLOPEDIA[1], new EncyclopediaData("Mickey Mouse",				"Name: Mickey Mouse \n\nUniverse: Disney \n\nFirst Appearance: Steamboat Willie (1928) \nVoice Actor: Bret Iwan (Official) / NA (In-game) \n\nOccupation: Adventurer, Mascot \n\nWeapons / Abilities: Paintbrush, Magical Brush, Quick Reflexes \n\nProfile: Mickey Mouse is one of the most iconic and beloved characters in the world. As Disney's mascot, he has been part of countless adventures and stories, bringing joy to millions. Mickey's courageous and clever nature makes him a formidable fighter and a joy to watch. \n\nRival: Pete \n\nTechnical: \n\nArchetype: Rush-Down - Footsie \n\nStats: \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References:"));
-	array_push(ENCYCLOPEDIA[1], new EncyclopediaData("Dexter and Dee Dee",			"Name: Dexter and Dee Dee \n\nUniverse: Dexter's Laboratory \n\nFirst Appearance: Dexter's Laboratory (1996) \nVoice Actor: Christine Cavanaugh (Dexter, Official) / Kat Cressida (Dee Dee, Official) / NA (In-game) \n\nOccupation: Boy Genius / Troublemaker \n\nWeapons / Abilities: High-tech gadgets, robotic assistants, Dee Dee's unpredictable antics \n\nProfile: Dexter is a boy genius with a secret laboratory where he invents amazing gadgets and conducts experiments. His sister Dee Dee, however, always manages to find her way into the lab, causing chaos with her playful nature. Together, they bring a unique blend of brilliance and mayhem. \n\nRival: Mandark \n\nTechnical: \n\nArchetype: Zoner \n\nStats: \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References:"));
-	array_push(ENCYCLOPEDIA[1], new EncyclopediaData("Shrek",							"Name: Shrek \n\nUniverse: Shrek \n\nFirst Appearance: Shrek (2001) \nVoice Actor: Mike Myers (Official) / NA (In-game) \n\nOccupation: Ogre, Hero \n\nWeapons / Abilities: Ogre strength, swamp environment manipulation \n\nProfile: Shrek is a grumpy but good-hearted ogre who values his privacy but ultimately cherishes friendship and love. His adventures often see him rescuing friends and fighting against villains, showing his courage and loyalty. \n\nRival: Lord Farquaad \n\nTechnical: \n\nArchetype: Grappler \n\nStats: \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References:"));
+	array_push(ENCYCLOPEDIA[1], new EncyclopediaData("Dexter and Dee Dee",		"Name: Dexter and Dee Dee \n\nUniverse: Dexter's Laboratory \n\nFirst Appearance: Dexter's Laboratory (1996) \nVoice Actor: Christine Cavanaugh (Dexter, Official) / Kat Cressida (Dee Dee, Official) / NA (In-game) \n\nOccupation: Boy Genius / Troublemaker \n\nWeapons / Abilities: High-tech gadgets, robotic assistants, Dee Dee's unpredictable antics \n\nProfile: Dexter is a boy genius with a secret laboratory where he invents amazing gadgets and conducts experiments. His sister Dee Dee, however, always manages to find her way into the lab, causing chaos with her playful nature. Together, they bring a unique blend of brilliance and mayhem. \n\nRival: Mandark \n\nTechnical: \n\nArchetype: Zoner \n\nStats: \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References:"));
+	array_push(ENCYCLOPEDIA[1], new EncyclopediaData("Shrek",						"Name: Shrek \n\nUniverse: Shrek \n\nFirst Appearance: Shrek (2001) \nVoice Actor: Mike Myers (Official) / NA (In-game) \n\nOccupation: Ogre, Hero \n\nWeapons / Abilities: Ogre strength, swamp environment manipulation \n\nProfile: Shrek is a grumpy but good-hearted ogre who values his privacy but ultimately cherishes friendship and love. His adventures often see him rescuing friends and fighting against villains, showing his courage and loyalty. \n\nRival: Lord Farquaad \n\nTechnical: \n\nArchetype: Grappler \n\nStats: \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References:"));
 	array_push(ENCYCLOPEDIA[1], new EncyclopediaData("Wallace and Gromit",			"Name: Wallace and Gromit \n\nUniverse: Wallace and Gromit \n\nFirst Appearance: A Grand Day Out (1989) \nVoice Actor: Peter Sallis (Wallace, Official) / NA (Gromit is silent) \n\nOccupation: Inventor / Canine assistant \n\nWeapons / Abilities: Ingenious contraptions, teamwork \n\nProfile: Wallace, the eccentric inventor, and his loyal dog Gromit are known for their clever inventions and thrilling adventures. Together, they solve problems and face challenges with creativity and determination. \n\nRival: Feathers McGraw \n\nTechnical: \n\nArchetype: Trapper \n\nStats: \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References:"));
 	array_push(ENCYCLOPEDIA[1], new EncyclopediaData("PAC-MAN",						"Name: PAC-MAN \n\nUniverse: Pac-Man \n\nFirst Appearance: Pac-Man (1980) \nVoice Actor: NA \n\nOccupation: Maze Navigator, Pellet Eater \n\nWeapons / Abilities: Navigating mazes, eating power pellets, avoiding ghosts \n\nProfile: PAC-MAN is one of the most iconic characters in video game history. Known for his maze-chasing antics and pellet-eating prowess, he remains a beloved figure in gaming culture. \n\nRival: Blinky \n\nTechnical: \n\nArchetype: Mid-Range Offensive \n\nStats: \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References:"));
 	array_push(ENCYCLOPEDIA[1], new EncyclopediaData("Pac-Man",						"Name: Pac-Man \n\nUniverse: Pac-Man and the Ghostly Adventures \n\nFirst Appearance: Pac-Man and the Ghostly Adventures (2013) \nVoice Actor: Erin Mathews (Official) / NA (In-game) \n\nOccupation: Hero, Ghost Hunter \n\nWeapons / Abilities: Power berries, ghost-chomping abilities, various gadgets \n\nProfile: This reimagined version of PAC-MAN brings new adventures and a modern twist to the classic character. With new abilities and a fresh look, Pac-Man continues to battle against ghosts and protect his friends. \n\nRival: Betrayus \n\nTechnical: \n\nArchetype: Pseudo-Stance \n\nStats: \n\nReferences: \n\nMoveset references: \n\nAlt References: \n\nArcade Mode References:"));

@@ -8,8 +8,8 @@
   "name":"oP2LeaderHealthBar",
   "overriddenProperties":[],
   "parent":{
-    "name":"HUD",
-    "path":"folders/Objects/HUD.yy",
+    "name":"Leader",
+    "path":"folders/Objects/HUD/Leader.yy",
   },
   "parentObjectId":{
     "name":"oLeaderHealthBar",

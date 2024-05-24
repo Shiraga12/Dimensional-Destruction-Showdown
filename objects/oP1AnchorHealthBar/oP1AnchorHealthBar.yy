@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oAssistHealthBar",
+  "%Name":"oP1AnchorHealthBar",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oAssistHealthBar",
+  "name":"oP1AnchorHealthBar",
   "overriddenProperties":[],
   "parent":{
-    "name":"HUD",
-    "path":"folders/Objects/HUD.yy",
+    "name":"Anchor",
+    "path":"folders/Objects/HUD/Anchor.yy",
   },
   "parentObjectId":null,
   "persistent":false,

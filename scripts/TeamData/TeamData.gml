@@ -5,9 +5,9 @@ function TeamData(_CONTROLS = 0) constructor {
 	CONTROLS = _CONTROLS
 	
 	ORDER = [
-		{ CHAR: -1, HP: 100 },
-		{ CHAR: -1, HP: 100 },
-		{ CHAR: -1, HP: 100 }
+		{ CHAR: -1,	HP: 100,	getCHAR: function() {	return CHAR;	},	getHP: function() {	return HP;	}},
+		{ CHAR: -1,	HP: 100,	getCHAR: function() {	return CHAR;	},	getHP: function() {	return HP;	}},
+		{ CHAR: -1,	HP: 100,	getCHAR: function() {	return CHAR;	},	getHP: function() {	return HP;	}}
 	];
 	WINS = 0;
 	LOSSES = 0;
