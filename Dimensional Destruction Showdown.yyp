@@ -33,6 +33,10 @@
     {"$GMIncludedFile":"","%Name":"Background1.png","CopyToMask":-1,"filePath":"datafiles/Backgrounds","name":"Background1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"MoonBackgroundYESYES.png","CopyToMask":-1,"filePath":"datafiles/Backgrounds","name":"MoonBackgroundYESYES.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Angel_Dust_Default.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Angel Dust","name":"Angel_Dust_Default.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"Cuphead_Alt._1.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Cuphead","name":"Cuphead_Alt._1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"Cuphead_Alt._2.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Cuphead","name":"Cuphead_Alt._2.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"Cuphead_Alt._3.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Cuphead","name":"Cuphead_Alt._3.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"Cuphead_Alt._4.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Cuphead","name":"Cuphead_Alt._4.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Cuphead_Default.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Cuphead","name":"Cuphead_Default.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Jenny Wakeman - AltA.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Jenny Wakeman","name":"Jenny Wakeman - AltA.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Malachi_Alt_1.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Malachi and Darla","name":"Malachi_Alt_1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -77,7 +81,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.4.0.137",
+    "IDEVersion":"2024.4.1.152",
   },
   "name":"Dimensional Destruction Showdown",
   "resources":[
