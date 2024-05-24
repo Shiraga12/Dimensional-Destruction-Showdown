@@ -2,10 +2,10 @@
   "$GMSprite":"",
   "%Name":"sMickeyPortrait",
   "bboxMode":0,
-  "bbox_bottom":1599,
+  "bbox_bottom":1469,
   "bbox_left":0,
   "bbox_right":1255,
-  "bbox_top":130,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -25,7 +25,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":1600,
+  "height":1470,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"80c62d39-8d88-4420-8906-f2533b8484c7","blendMode":0,"displayName":"default","isLocked":false,"name":"80c62d39-8d88-4420-8906-f2533b8484c7","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -122,5 +122,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1600,
+  "width":1256,
 }
