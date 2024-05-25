@@ -90,6 +90,8 @@
     {"$GMIncludedFile":"","%Name":"SpongeBob_Alt_7.png","CopyToMask":-1,"filePath":"datafiles/Portraits/SpongeBob SquarePants","name":"SpongeBob_Alt_7.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"SpongeBob_Default.png","CopyToMask":-1,"filePath":"datafiles/Portraits/SpongeBob SquarePants","name":"SpongeBob_Default.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Vivian_default.png","CopyToMask":-1,"filePath":"datafiles/Portraits/Vivian","name":"Vivian_default.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"pickupCoin_4.wav","CopyToMask":-1,"filePath":"datafiles/Sounds","name":"pickupCoin_4.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"pickupCoin_5.wav","CopyToMask":-1,"filePath":"datafiles/Sounds","name":"pickupCoin_5.wav","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
