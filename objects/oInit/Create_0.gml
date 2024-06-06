@@ -65,43 +65,53 @@ TIME						=	90
 	
 	array_push(CHARACTER,	new CharacterData("Malachi and Darla",			"A completely original character duo with distinct abilities and a mysterious past. Malachi, the cunning tactician, and Darla, the fierce warrior, bring a unique dynamic to the battlefield.",													"Original Generation",						"Gimmick Fighter"))	
 	CHARACTER[0].SPRITES	=	{
-		Portrait: sMalachiDarlaPortrait,
+		Portrait:	sMalachiDarlaPortrait,
 	}
 	
 	array_push(CHARACTER,	new CharacterData("SpongeBob SquarePants",	"The optimistic and enthusiastic sea sponge who lives in a pineapple under the sea. Known for his infectious energy and unwavering positivity, SpongeBob is always ready for a new adventure.",											"SpongeBob SquarePants",					"All-Rounder"))
 	CHARACTER[1].SPRITES	=	{
-		Portrait: sSpongeBobPortrait,
+		Portrait:	sSpongeBobPortrait,
 	};
 	
 	array_push(CHARACTER,	new CharacterData("Mickey Mouse",				"The legendary Disney character in his adventurous form. Mickey Mouse is beloved worldwide for his courage, cleverness, and ability to bring joy to those around him.",																		"Epic Mickey",								"Rush-Down - Footsie"));
 	CHARACTER[2].SPRITES	=	{
-		Portrait: sMickeyPortrait,
+		Portrait:	sMickeyPortrait,
 	}
 	
 	array_push(CHARACTER,	new CharacterData("Dexter and Dee Dee",		"Dexter, the boy genius with a secret laboratory, and his meddlesome sister Dee Dee from the animated series Dexter's Laboratory. Together, they create a mix of brilliant inventions and chaotic antics.",							"Dexter's Laboratory",					"Zoner"));
+	CHARACTER[3].SPRITES	=	{
+		Portrait:	sDexterAndDeeDeePortrait
+	}
+	CHARACTER[3].SEQUENCES	=	{
+		HP:	seqDexterHP,
+		HK:	seqDexterHK,
+		
+		LP:	seqDexterLP
+	}	
+	
 	array_push(CHARACTER,	new CharacterData("Shrek",						"The lovable ogre from the swamp with a heart of gold. Shrek may appear gruff, but he's a true hero who values friendship and courage above all.",																								"Shrek",										"Grappler"));
 	array_push(CHARACTER,	new CharacterData("Wallace and Gromit",		"The eccentric inventor Wallace and his intelligent dog Gromit, known for their quirky and ingenious adventures. Their inventive spirit and teamwork make them a beloved duo.",																"Wallace and Gromit",						"Trapper"));
 	
 	array_push(CHARACTER,	new CharacterData("PAC-MAN",					"The classic arcade character who navigates mazes, eats pellets, and avoids ghosts. PAC-MAN is an enduring icon of video gaming, known for his timeless gameplay and charming design.",													"Pac-Man",									"Mid-Range Offensive"));
 	CHARACTER[6].SPRITES	=	{
-		Portrait: sPACMANPortrait,
+		Portrait:	sPACMANPortrait,
 	}
 	
 	array_push(CHARACTER,	new CharacterData("Pac-Man",					"The reimagined version of PAC-MAN from the Pac-Man and the Ghostly Adventures series. This modern take on the classic character brings new adventures and a fresh look to the iconic hero.",										"Pac-Man and the Ghostly Adventures",	"Pseudo-Stance",		[],	{}));
 	
 	array_push(CHARACTER,	new CharacterData("Cuphead",					"Cuphead, the impulsive hero from the acclaimed indie game, battles his way through surreal worlds to repay his debt to the devil. With his classic cartoon style and challenging gameplay, he brings a unique flair to the fight.",	"Cuphead",									""));
 	CHARACTER[8].SPRITES	=	{
-		Portrait: sCupheadPortrait,
+		Portrait:	sCupheadPortrait,
 	}
 	
 	array_push(CHARACTER,	new CharacterData("Mugman",					"Mugman, Cuphead’s cautious and loyal brother, joins the fray with his own set of skills. Together, they tackle formidable foes in a quest for redemption, showcasing teamwork and determination.",									"Cuphead",									""));
 	CHARACTER[9].SPRITES	=	{
-		Portrait: sMugmanPortrait,
+		Portrait:	sMugmanPortrait,
 	}
 	
 	array_push(CHARACTER,	new CharacterData("Muffet",					"Description here!",																																																															"Original Generation",						""));
 	CHARACTER[10].SPRITES	=	{
-		Portrait: sMuffetPortrait,
+		Portrait:	sMuffetPortrait,
 	}
 	
 	array_push(CHARACTER,	new CharacterData("Skull Kid",					"Skull Kid, a mischievous character from the Zelda series, wields the powerful Majora's Mask. With his trickster nature and dark magic, he brings chaos and unpredictability to any battle.",												"The Legend of Zelda",						""));
