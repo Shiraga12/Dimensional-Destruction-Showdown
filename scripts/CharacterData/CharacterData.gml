@@ -7,17 +7,19 @@
 /// @param {string}							_TYPE					-	The type or category of the character.
 /// @param {array<struct.MovesetData>}	_MOVES				-	An array of moves for the character.
 /// @param {struct}							_SPRITES				-	An object containing the character's sprites.
+/// @param {struct}							_SEQUENCES				-	An object containing the character's sequences.
 /// @param {string}							_VA					-	The voice actor of the character.
 /// @param {string}							_RIVAL				-	The rival character.
 /// @param {string}							_FIRST_APPEARANCE	-	The first appearance of the character.
 /// @param {string}							_ARCHETYPE			-	The archetype of the character.
-function CharacterData(_NAME, _DESCRIPTION, _SERIES, _TYPE, _MOVES = [], _SPRITES = {}, _VA = "N/A", _RIVAL = "N/A", _FIRST_APPEARANCE = "N/A", _ARCHETYPE = "N/A", _LOCKED = false) constructor{
+function CharacterData(_NAME, _DESCRIPTION, _SERIES, _TYPE, _MOVES = [], _SPRITES = {},_SEQUENCES = {}, _VA = "N/A", _RIVAL = "N/A", _FIRST_APPEARANCE = "N/A", _ARCHETYPE = "N/A", _LOCKED = false) constructor{
 	NAME					=   _NAME;
 	DESCRIPTION			=   _DESCRIPTION;
 	SERIES				=   _SERIES;
 	TYPE					=	_TYPE;
 	MOVES				=   _MOVES;
 	SPRITES				=   _SPRITES;
+	SEQUENCES				=   _SEQUENCES;
 	VA						=	_VA
 	RIVAL					=	_RIVAL
 	FIRST_APPEARANCE	=	_FIRST_APPEARANCE
@@ -32,6 +34,8 @@ function CharacterData(_NAME, _DESCRIPTION, _SERIES, _TYPE, _MOVES = [], _SPRITE
 	static getMOVE					=	function(_i)						{	return MOVES[_i];									};
 	static getSPRITES				=	function()						{	return SPRITES;									};
 	static getSPRITE				=	function(_NAME)					{	return struct_get(SPRITES, _NAME);			};
+	static getSEQUENCES				=	function()						{	return SEQUENCES;									};
+	static getSEQUENCE				=	function(_NAME)					{	return struct_get(SEQUENCES, _NAME);			};
 	static getVA						=	function()						{	return VA;											};
 	static getRIVAL					=	function()						{	return RIVAL;										};
 	static getFIRST_APPEARANCE	=	function()						{	return FIRST_APPEARANCE;						};
@@ -47,6 +51,8 @@ function CharacterData(_NAME, _DESCRIPTION, _SERIES, _TYPE, _MOVES = [], _SPRITE
 	static setMOVE					=	function(_MOVE)					{	MOVE					= _MOVE						};	
 	static setSPRITES				=	function(_SPRITES)				{	SPRITES				= _SPRITES					};	
 	static setSPRITE				=	function(_NAME,_SPRITE)		{	struct_set(SPRITES,_NAME,_SPRITE)				};	
+	static setSEQUENCES				=	function(_SEQUENCES)				{	SPRITES				= _SEQUENCES					};	
+	static setSEQUENCE				=	function(_NAME,_SEQUENCE)		{	struct_set(SPRITES,_NAME,_SEQUENCE)				};	
 	static setVA						=	function(_VA)					{	VA						=	_VA;						};
 	static setRIVAL					=	function(_RIVAL)				{	RIVAL					=	_RIVAL;					};
 	static setFIRST_APPEARANCE	=	function(_FIRST_APPEARANCE)	{	FIRST_APPEARANCE	=	_FIRST_APPEARANCE;	};
