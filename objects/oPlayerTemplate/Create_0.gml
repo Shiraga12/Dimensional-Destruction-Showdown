@@ -43,8 +43,13 @@ stateFREE = function() {
 
     #region ANIMATION
     if (HSP != 0) {
-        sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("WALK");
-        image_speed = 0.5; // Adjust walk animation speed
+		if TEAM.ORDER[INDEX].CHAR.hasSPRITE("WALK") {
+			sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("WALK");
+			image_speed = 0.5; // Adjust walk animation speed
+		}
+		else if TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("WALK"){
+			SEQ = layer_sequence_create(layer,x,y,TEAM.ORDER[INDEX].CHAR.getSEQUENCE("WALK"))
+		}
     } else if (VSP != 0) {
         sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("JUMP");
     } else {
