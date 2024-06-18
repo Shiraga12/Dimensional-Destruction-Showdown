@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"__ftr_settings",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__ftr_settings",
+  "parent":{
+    "name":"FoxeyTransitionsPro",
+    "path":"folders/Scripts/FoxeyTransitionsPro.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

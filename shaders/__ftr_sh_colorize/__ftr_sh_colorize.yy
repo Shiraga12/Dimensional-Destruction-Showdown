@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ftr_sh_colorize",
+  "name":"__ftr_sh_colorize",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Scripts/FoxeyTransitionsPro/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

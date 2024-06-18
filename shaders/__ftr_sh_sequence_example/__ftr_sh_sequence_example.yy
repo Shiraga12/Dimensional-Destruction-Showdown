@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ftr_sh_sequence_example",
+  "name":"__ftr_sh_sequence_example",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Scripts/FoxeyTransitionsPro/Sequences/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

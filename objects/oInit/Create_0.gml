@@ -24,40 +24,37 @@ TIME						=	90
 	#macro GAMEPAD_AXIS			gamepad_axis_value
 	
 	// Player 1
-	#macro P1_KEYLEFT		max(KEY(ord("A")),			GAMEPAD(0,				gp_padl),		GAMEPAD_AXIS(0,gp_axislh),	0)
-	#macro P1_KEYRIGHT		max(KEY(ord("D")),			GAMEPAD(0,				gp_padr),		-GAMEPAD_AXIS(0,gp_axislh),	0)
-	#macro P1_KEYJUMP		max(KEY(ord("W")),			GAMEPAD(0,				gp_padu),		-GAMEPAD_AXIS(0,gp_axislv),	0)
-	#macro P1_KEYCROUCH		max(KEY(ord("S")),			GAMEPAD(0,				gp_padd),		GAMEPAD_AXIS(0,gp_axislv),	0)
-	#macro P1_KEYLP			max(KEY(ord("J")),			GAMEPAD(0,				gp_face1))
-	#macro P1_KEYLK			max(KEY(ord("K")),			GAMEPAD(0,				gp_face2))
-	#macro P1_KEYHP			max(KEY(ord("U")),			GAMEPAD(0,				gp_face3))
-	#macro P1_KEYHK			max(KEY(ord("I")),			GAMEPAD(0,				gp_face4))
-	#macro P1_KEYASSIST1	max(KEY(ord("L")),			GAMEPAD(0,				gp_shoulderl))
-	#macro P1_KEYASSIST2	max(KEY(ord("O")),			GAMEPAD(0,				gp_shoulderr))
-	#macro P1_KEYSWAP		max(KEY(ord("P")),			GAMEPAD_PRESSED(0,	gp_shoulderrb))
-	#macro P1_KEYSTART		max(KEY(ord("ENTER")),		GAMEPAD_PRESSED(0,	gp_start))
+	#macro P1_KEYLEFT		max(KEY(ord("A")),		GAMEPAD(0,			gp_padl),		GAMEPAD_AXIS(0,gp_axislh),	0)
+	#macro P1_KEYRIGHT		max(KEY(ord("D")),		GAMEPAD(0,			gp_padr),		-GAMEPAD_AXIS(0,gp_axislh),	0)
+	#macro P1_KEYJUMP		max(KEY(ord("W")),		GAMEPAD(0,			gp_padu),		-GAMEPAD_AXIS(0,gp_axislv),	0)
+	#macro P1_KEYCROUCH		max(KEY(ord("S")),		GAMEPAD(0,			gp_padd),		GAMEPAD_AXIS(0,gp_axislv),	0)
+	#macro P1_KEYLP			max(KEY(ord("J")),		GAMEPAD(0,			gp_face1),		0)
+	#macro P1_KEYLK			max(KEY(ord("K")),		GAMEPAD(0,			gp_face2),		0)
+	#macro P1_KEYHP			max(KEY(ord("U")),		GAMEPAD(0,			gp_face3),		0)
+	#macro P1_KEYHK			max(KEY(ord("I")),		GAMEPAD(0,			gp_face4),		0)
+	#macro P1_KEYASSIST1	max(KEY(ord("L")),		GAMEPAD(0,			gp_shoulderl),	0)
+	#macro P1_KEYASSIST2	max(KEY(ord("O")),		GAMEPAD(0,			gp_shoulderr),	0)
+	#macro P1_KEYSWAP		max(KEY(ord("P")),		GAMEPAD_PRESSED(0,	gp_shoulderrb),	0)
+	#macro P1_KEYSTART		max(KEY(vk_enter),		GAMEPAD_PRESSED(0,	gp_start),		0)
 	
 	// Player 2
-	#macro P2_KEYLEFT		max(KEY(ord("LEFT")),		GAMEPAD(1,				gp_padl),		GAMEPAD_AXIS(1, gp_axislh),	0)
-	#macro P2_KEYRIGHT		max(KEY(ord("RIGHT")),		GAMEPAD(1,				gp_padr),		-GAMEPAD_AXIS(1, gp_axislh),	0)
-	#macro P2_KEYJUMP		max(KEY(ord("UP")),			GAMEPAD(1,				gp_padu),		-GAMEPAD_AXIS(1, gp_axislv),	0)
-	#macro P2_KEYCROUCH		max(KEY(ord("DOWN")),		GAMEPAD(1,				gp_padd),		GAMEPAD_AXIS(1, gp_axislv),	0)
-	#macro P2_KEYLP			max(KEY(ord("NUMPAD1")),	GAMEPAD(1,				gp_face1))
-	#macro P2_KEYLK			max(KEY(ord("NUMPAD2")),	GAMEPAD(1,				gp_face2))
-	#macro P2_KEYHP			max(KEY(ord("NUMPAD4")),	GAMEPAD(1,				gp_face3))
-	#macro P2_KEYHK			max(KEY(ord("NUMPAD5")),	GAMEPAD(1,				gp_face4))
-	#macro P2_KEYASSIST1	max(KEY(ord("NUMPAD3")),	GAMEPAD(1,				gp_shoulderl))
-	#macro P2_KEYASSIST2	max(KEY(ord("NUMPAD0")),	GAMEPAD(1,				gp_shoulderr))
-	#macro P2_KEYSWAP		max(KEY(ord("DECIMAL")),	GAMEPAD_PRESSED(1,	gp_shoulderrb))
-	#macro P2_KEYSTART		max(KEY(ord("RETURN")),	GAMEPAD_PRESSED(1,	gp_start))
+	#macro P2_KEYLEFT		max(KEY(vk_left),		GAMEPAD(1,			gp_padl),		GAMEPAD_AXIS(1, gp_axislh),		0)
+	#macro P2_KEYRIGHT		max(KEY(vk_right),		GAMEPAD(1,			gp_padr),		-GAMEPAD_AXIS(1, gp_axislh),	0)
+	#macro P2_KEYJUMP		max(KEY(vk_up),			GAMEPAD(1,			gp_padu),		-GAMEPAD_AXIS(1, gp_axislv),	0)
+	#macro P2_KEYCROUCH		max(KEY(vk_down),		GAMEPAD(1,			gp_padd),		GAMEPAD_AXIS(1, gp_axislv),		0)
+	#macro P2_KEYLP			max(KEY(vk_numpad1),	GAMEPAD(1,			gp_face1),		0)
+	#macro P2_KEYLK			max(KEY(vk_numpad2),	GAMEPAD(1,			gp_face2),		0)
+	#macro P2_KEYHP			max(KEY(vk_numpad4),	GAMEPAD(1,			gp_face3),		0)
+	#macro P2_KEYHK			max(KEY(vk_numpad5),	GAMEPAD(1,			gp_face4),		0)
+	#macro P2_KEYASSIST1	max(KEY(vk_numpad3),	GAMEPAD(1,			gp_shoulderl),	0)
+	#macro P2_KEYASSIST2	max(KEY(vk_numpad0),	GAMEPAD(1,			gp_shoulderr),	0)
+	#macro P2_KEYSWAP		max(KEY(vk_decimal),	GAMEPAD_PRESSED(1,	gp_shoulderrb),	0)
+	#macro P2_KEYSTART		max(KEY(vk_return),		GAMEPAD_PRESSED(1,	gp_start),		0)
 }
 
 /*	Modes		*/	{
 	globalvar MODES;
-	MODES = []
-	MODES[0]	=	["Battle",			"Other"]
-	MODES[1]	=	["Versus",		"Tutorial",	"Training"]
-	MODES[2]	=	["Encyclopedia",	"Settings"]
+	MODES = ["Story", "Versus",	"Tutorial",	"Training",	"Encyclopedia",	"Settings"]
 }
 /*	Characters	*/	{
 	globalvar CHARACTER;

@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ftr_sh_sqrot",
+  "name":"__ftr_sh_sqrot",
+  "parent":{
+    "name":"Normal",
+    "path":"folders/Scripts/FoxeyTransitionsPro/Shaders/Normal.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

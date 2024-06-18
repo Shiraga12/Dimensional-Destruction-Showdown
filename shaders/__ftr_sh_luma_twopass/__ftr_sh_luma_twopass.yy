@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ftr_sh_luma_twopass",
+  "name":"__ftr_sh_luma_twopass",
+  "parent":{
+    "name":"Normal",
+    "path":"folders/Scripts/FoxeyTransitionsPro/Shaders/Normal.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

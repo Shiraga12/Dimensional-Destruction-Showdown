@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ftr_sh_dither_circle_twopass",
+  "name":"__ftr_sh_dither_circle_twopass",
+  "parent":{
+    "name":"Dither",
+    "path":"folders/Scripts/FoxeyTransitionsPro/Shaders/Dither.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

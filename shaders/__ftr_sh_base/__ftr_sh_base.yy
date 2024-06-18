@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ftr_sh_base",
+  "name":"__ftr_sh_base",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Scripts/FoxeyTransitionsPro/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}
