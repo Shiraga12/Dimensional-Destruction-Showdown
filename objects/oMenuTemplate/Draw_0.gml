@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-font_enable_sdf(fntCartoon,true)
 draw_set_font(fntCartoon);
 draw_set_align(0,0)
 draw_text_transformed(32, 32, TITLE, 4, 4, 0);

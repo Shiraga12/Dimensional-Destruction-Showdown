@@ -80,10 +80,11 @@ TIME						=	90
 		Portrait:	sDexterAndDeeDeePortrait
 	}
 	CHARACTER[3].SEQUENCES	=	{
-		HP:	seqDexterHP,
-		HK:	seqDexterHK,
-		
-		LP:	seqDexterLP
+		IDLE:	seqDexterDeeDee_IDLE,
+		HP:		seqDexterHP,
+		HK:		seqDexterHK,
+				
+		LP:		seqDexterLP
 	}	
 	
 	array_push(CHARACTER,	new CharacterData("Shrek",						"The lovable ogre from the swamp with a heart of gold. Shrek may appear gruff, but he's a true hero who values friendship and courage above all.",																								"Shrek",										"Grappler"));

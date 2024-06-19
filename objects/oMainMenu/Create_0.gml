@@ -13,7 +13,16 @@ array_push(OPTIONS, new OptionData("Tutorial",			"Learn how to play.",			functio
     // Implement tutorial mode functionality
 }));
 array_push(OPTIONS, new OptionData("Training",			"Practice your skills.",		function() {
-    // Implement training mode functionality
+    T1.CONTROLS = 1
+	T1.setCHARACTER(0,3)
+	T1.setCHARACTER(1,3)
+	T1.setCHARACTER(2,3)
+	
+    T2.CONTROLS = 0
+	T2.setCHARACTER(0,3)
+	T2.setCHARACTER(1,3)
+	T2.setCHARACTER(2,3)
+	room_goto(rmTestingRoom)
 }));
 array_push(OPTIONS, new OptionData("Encyclopedia Mode", "Read up on game lore.",		function() {
     // Implement encyclopedia functionality

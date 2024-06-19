@@ -53,7 +53,12 @@ stateFREE = function() {
     } else if (VSP != 0) {
         sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("JUMP");
     } else {
-        sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("IDLE");
+		if TEAM.ORDER[INDEX].CHAR.hasSPRITE("IDLE") {
+			sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("IDLE");
+		}
+		else if TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("IDLE"){
+			SEQ = layer_sequence_create(layer,x,y,TEAM.ORDER[INDEX].CHAR.getSEQUENCE("IDLE"))
+		}
     }
     
     if (KEY_CROUCH && place_meeting(x, y + 1, oGround)) {

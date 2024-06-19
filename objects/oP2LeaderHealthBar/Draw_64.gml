@@ -1,4 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_sprite_stretched(sprite_index,	0,	32,	32,	sprite_width * (MAX_HEALTH / T2.ORDER[0].getHP()),	64)
+draw_sprite_stretched(sprite_index,	0,	32,	32,	sprite_width * (MAX_HEALTH / T2.ORDER[0].HP),	64)
