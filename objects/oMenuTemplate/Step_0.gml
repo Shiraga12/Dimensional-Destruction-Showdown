@@ -5,8 +5,6 @@ var KEY_DOWN	= max(KEY_PRESSED(vk_down),		GAMEPAD_PRESSED(0,gp_padd),		GAMEPAD_A
 var KEY_CONFIRM	= max(KEY_PRESSED(ord("Z")),	GAMEPAD_PRESSED(0,gp_face1),	0)
 var KEY_BACK	= max(KEY_PRESSED(ord("X")),	GAMEPAD_PRESSED(0,gp_face2),	0)
 
-index = clamp(index,	0,	array_length(OPTIONS))
-
 if KEY_UP {
 	index--
 }
@@ -16,3 +14,5 @@ if KEY_DOWN {
 if KEY_CONFIRM {
 	OPTIONS[index].trigger()
 }
+
+index = clamp(index,	0,	array_length(OPTIONS)-1)

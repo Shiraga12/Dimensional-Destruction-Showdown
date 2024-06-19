@@ -3,21 +3,26 @@
 
 event_inherited()
 
-array_push(OPTIONS, OptionData("Story Mode", "Experience the storyline.",	function() {
+array_push(OPTIONS, new OptionData("Story Mode",		"Experience the storyline.",	function() {
     // Implement story mode functionality
 }));
-array_push(OPTIONS, OptionData("Versus Mode", "Challenge other players.",	function() {
+array_push(OPTIONS, new OptionData("Versus Mode",		"Challenge other players.",		function() {
     // Implement versus mode functionality
 }));
-array_push(OPTIONS, OptionData("Tutorial", "Learn how to play.",			function() {
+array_push(OPTIONS, new OptionData("Tutorial",			"Learn how to play.",			function() {
     // Implement tutorial mode functionality
 }));
-array_push(OPTIONS, OptionData("Training", "Practice your skills.",		function() {
+array_push(OPTIONS, new OptionData("Training",			"Practice your skills.",		function() {
     // Implement training mode functionality
 }));
-array_push(OPTIONS, OptionData("Encyclopedia", "Read up on game lore.",		function() {
+array_push(OPTIONS, new OptionData("Encyclopedia Mode", "Read up on game lore.",		function() {
     // Implement encyclopedia functionality
 }));
-array_push(OPTIONS, OptionData("Settings", "Adjust game settings.",		function() {
-    // Implement settings functionality
+array_push(OPTIONS, new OptionData("Settings",			"Adjust game settings.",		function() {
+	
+}));
+array_push(OPTIONS, new OptionData("Quit to Desktop",	"Return to the desktop.",		function() {
+    screen_transition(TR_TYPE.CROSSFADE,TR_WAY.IN,false,c_black,function() {
+		game_end()
+	})
 }));
