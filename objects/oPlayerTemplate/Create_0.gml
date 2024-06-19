@@ -18,7 +18,7 @@ stateINTRO = function() {
 
 stateFREE = function() {
     HSP = KEY_RIGHT - KEY_LEFT;
-    MOVESPEED = KEY_RUN ? RUNSPEED : WALKSPEED;
+//    MOVESPEED = KEY_RUN ? RUNSPEED : WALKSPEED;
     HSP *= MOVESPEED;
     
     // Apply gravity if not grounded
@@ -51,23 +51,24 @@ stateFREE = function() {
 			SEQ = layer_sequence_create(layer,x,y,TEAM.ORDER[INDEX].CHAR.getSEQUENCE("WALK"))
 		}
     } else if (VSP != 0) {
-        sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("JUMP");
+        //	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("JUMP");
     } else {
 		if TEAM.ORDER[INDEX].CHAR.hasSPRITE("IDLE") {
 			sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("IDLE");
+			image_speed = 1; // Adjust idle animation speed
 		}
 		else if TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("IDLE"){
 			SEQ = layer_sequence_create(layer,x,y,TEAM.ORDER[INDEX].CHAR.getSEQUENCE("IDLE"))
 		}
     }
     
-    if (KEY_CROUCH && place_meeting(x, y + 1, oGround)) {
-        sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("CROUCH");
-    }
+    //	if (KEY_CROUCH && place_meeting(x, y + 1, oGround)) {
+	//		// sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("CROUCH");
+    //	}
     
-    if (KEY_BLOCK) {
-        sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("BLOCK");
-    }
+    //	if (KEY_BLOCK) {
+    //	    //	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("BLOCK");
+    //	}
     #endregion
 }
 
@@ -170,4 +171,4 @@ stateCOMBO_CHECK = function() {
     }
 }
 
-state = stateFREE();
+state = stateFREE;

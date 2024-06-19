@@ -7,7 +7,7 @@ draw_text_transformed(32, 32, TITLE, 4, 4, 0);
 draw_set_align(1,1);
 draw_set_font(fntCredit);
 for (var i = 0; i < array_length(OPTIONS); ++i) {
-    var yPos = y + 32 * (i - index);
+    var yPos = y + 24 * (i - index);
 	
 	var TXT;
 	if i = index {
@@ -16,7 +16,7 @@ for (var i = 0; i < array_length(OPTIONS); ++i) {
 	else {
 		TXT = $"{OPTIONS[i].getNAME()}"
 	}
-    draw_text_transformed(x, yPos, TXT, 2, 2, 0);
+    draw_text_transformed(x, yPos, TXT, 1.5, 1.5, 0);
 }
 
 draw_set_align(2,2);

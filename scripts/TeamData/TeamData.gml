@@ -30,14 +30,14 @@ function TeamData(_CONTROLS = 0) constructor {
 	/// @desc Gets the character data at a specific position in the team.
 	/// @param {number} index - The index of the character in the ORDER array (0 for POINT, 1 for MID, 2 for ANCHOR).
 	static getCHARACTER = function(index) {
-		return ORDER[index];
+		return ORDER[index].CHAR;
 	};
 	/// @desc Sets the character data at a specific position in the team.
 	/// @param {number} index - The index of the character in the ORDER array (0 for POINT, 1 for MID, 2 for ANCHOR).
 	/// @param {number} charIndex - The character index to set.
 	/// @param {number} hp - The HP value to set for the character.
 	static setCHARACTER = function(index, charIndex, hp = 100) {
-		ORDER[index] = { CHAR: charIndex, HP: hp };
+		ORDER[index] = { CHAR: CHARACTER[charIndex], HP: hp };
 	};
 	/// @desc Swaps two characters in the team.
 	/// @param {number} index1 - The index of the first character in the ORDER array.

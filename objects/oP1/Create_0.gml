@@ -1,9 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-TEAM			=	T1
-KEY_LEFT		=	P1_KEYLEFT
+TEAM		=	T1
+KEY_LEFT	=	P1_KEYLEFT
 KEY_RIGHT	=	P1_KEYRIGHT
+KEY_JUMP	=	P1_KEYJUMP
+KEY_CROUCH	=	P1_KEYCROUCH
 KEY_LP		=	P1_KEYLP			
 KEY_LK		=	P1_KEYLK			
 KEY_HP		=	P1_KEYHP			

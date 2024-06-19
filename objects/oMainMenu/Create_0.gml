@@ -3,7 +3,7 @@
 
 event_inherited()
 
-array_push(OPTIONS, new OptionData("Story Mode",		"Experience the storyline.",	function() {
+array_push(OPTIONS, new OptionData("Story Mode (Coming soon!... hopefully!)",		"Experience the storyline.",	function() {
     // Implement story mode functionality
 }));
 array_push(OPTIONS, new OptionData("Versus Mode",		"Challenge other players.",		function() {
