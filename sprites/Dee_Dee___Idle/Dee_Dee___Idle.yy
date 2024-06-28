@@ -28,7 +28,7 @@
   ],
   "name":"Dee_Dee___Idle",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Fighters",
     "path":"folders/Sprites/Fighters.yy",
@@ -96,7 +96,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":286,
-    "yorigin":378,
+    "yorigin":757,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

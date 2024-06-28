@@ -1,16 +1,38 @@
 /// @description Insert description here
 // You can write your code in this editor
-SEQ = -1;
+enum FighterState {
+	Intro,
+	Idle,
+	Walk,
+	Jump,
+	WeakPunch,
+	WeakKick,
+	HeavyPunch,
+	HeavyKick,
+	Assist1,
+	Assist2
+}
+
+SEQ[FighterState.Intro]			=	-1;	// Intro
+SEQ[FighterState.Idle]			=	-1;	// Idle
+SEQ[FighterState.Walk]			=	-1;	// Walk
+SEQ[FighterState.Jump]			=	-1;	// Jump
+SEQ[FighterState.WeakPunch]		=	-1;	// Low/Weak Punch
+SEQ[FighterState.WeakKick]		=	-1;	// Low/Weak Kick
+SEQ[FighterState.HeavyPunch]	=	-1;	// High/Heavy Punch
+SEQ[FighterState.HeavyKick]		=	-1;	// High/Heavy Kick
+SEQ[FighterState.Assist1]		=	-1;	// Assist 1
+SEQ[FighterState.Assist2]		=	-1;	// Assist 2
 
 // Define combo variables
 stateINTRO = function() {
     if (TEAM.ORDER[INDEX].CHAR.hasSPRITE("Intro")) {
         sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("Intro");
     } else if (TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("Intro")) {
-        if (!layer_sequence_exists(layer, SEQ)) {
-            SEQ = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("Intro"));
+        if (!layer_sequence_exists(layer, SEQ[FighterState.Intro])) {
+            SEQ[FighterState.Intro] = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("Intro"));
         }
-        if (layer_sequence_is_finished(SEQ)) {
+        if (layer_sequence_is_finished(SEQ[FighterState.Intro])) {
             state = stateFREE;
         }
     }
@@ -42,33 +64,37 @@ stateFREE = function() {
     if (KEY_A2) state = stateA2;
 
     #region ANIMATION
-    if (HSP != 0) {
-		if TEAM.ORDER[INDEX].CHAR.hasSPRITE("WALK") {
-			sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("WALK");
-			image_speed = 0.5; // Adjust walk animation speed
-		}
-		else if TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("WALK"){
-			SEQ = layer_sequence_create(layer,x,y,TEAM.ORDER[INDEX].CHAR.getSEQUENCE("WALK"))
-		}
-    } else if (VSP != 0) {
-        //	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("JUMP");
-    } else {
-		if TEAM.ORDER[INDEX].CHAR.hasSPRITE("IDLE") {
+		if (HSP != 0) {
+			if TEAM.ORDER[INDEX].CHAR.hasSPRITE("WALK") {
+				sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("WALK");
+				image_speed = 0.5; // Adjust walk animation speed
+			}
+			else if TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("WALK"){
+				if (!layer_sequence_exists(layer, SEQ[FighterState.Walk])) {
+					SEQ[FighterState.Walk] = layer_sequence_create(layer,x,y,TEAM.ORDER[INDEX].CHAR.getSEQUENCE("WALK"))
+				}
+			}
+		} else if (VSP != 0) {
+		    //	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("JUMP");
+		} else {
+			if TEAM.ORDER[INDEX].CHAR.hasSPRITE("IDLE") {
 			sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("IDLE");
 			image_speed = 1; // Adjust idle animation speed
 		}
-		else if TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("IDLE"){
-			SEQ = layer_sequence_create(layer,x,y,TEAM.ORDER[INDEX].CHAR.getSEQUENCE("IDLE"))
+			else if TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("IDLE"){
+				if (!layer_sequence_exists(layer, SEQ[FighterState.Idle])) {
+					SEQ[FighterState.Idle] = layer_sequence_create(layer,x,y,TEAM.ORDER[INDEX].CHAR.getSEQUENCE("IDLE"))
+				}
+			}
 		}
-    }
-    
-    //	if (KEY_CROUCH && place_meeting(x, y + 1, oGround)) {
-	//		// sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("CROUCH");
-    //	}
-    
-    //	if (KEY_BLOCK) {
-    //	    //	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("BLOCK");
-    //	}
+		
+		//	if (KEY_CROUCH && place_meeting(x, y + 1, oGround)) {
+		//		// sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("CROUCH");
+		//	}
+		
+		//	if (KEY_BLOCK) {
+		//	    //	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("BLOCK");
+		//	}
     #endregion
 }
 
@@ -76,8 +102,8 @@ stateLP = function() { // Low Punch
     if (TEAM.ORDER[INDEX].CHAR.hasSPRITE("LP")) {
         sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("LP");
     } else if (TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("LP")) {
-        if (!layer_sequence_exists(layer, SEQ)) {
-            SEQ = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("LP"));
+        if (!layer_sequence_exists(layer, SEQ[FighterState.WeakPunch])) {
+            SEQ[FighterState.WeakPunch] = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("LP"));
         }
         if (layer_sequence_is_finished(SEQ)) {
             state = stateFREE;
@@ -90,8 +116,8 @@ stateLK = function() { // Low Kick
     if (TEAM.ORDER[INDEX].CHAR.hasSPRITE("LK")) {
         sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("LK");
     } else if (TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("LK")) {
-        if (!layer_sequence_exists(layer, SEQ)) {
-            SEQ = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("LK"));
+        if (!layer_sequence_exists(layer, SEQ[FighterState.WeakKick])) {
+            SEQ[FighterState.WeakKick] = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("LK"));
         }
         if (layer_sequence_is_finished(SEQ)) {
             state = stateFREE;
@@ -104,8 +130,8 @@ stateHP = function() { // Heavy Punch
     if (TEAM.ORDER[INDEX].CHAR.hasSPRITE("HP")) {
         sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("HP");
     } else if (TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("HP")) {
-        if (!layer_sequence_exists(layer, SEQ)) {
-            SEQ = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("HP"));
+        if (!layer_sequence_exists(layer, SEQ[FighterState.HeavyPunch])) {
+            SEQ[FighterState.HeavyPunch] = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("HP"));
         }
         if (layer_sequence_is_finished(SEQ)) {
             state = stateFREE;
@@ -118,8 +144,8 @@ stateHK = function() { // Heavy Kick
     if (TEAM.ORDER[INDEX].CHAR.hasSPRITE("HK")) {
         sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("HK");
     } else if (TEAM.ORDER[INDEX].CHAR.hasSEQUENCE("HK")) {
-        if (!layer_sequence_exists(layer, SEQ)) {
-            SEQ = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("HK"));
+        if (!layer_sequence_exists(layer, SEQ[FighterState.HeavyKick])) {
+            SEQ[FighterState.HeavyKick] = layer_sequence_create(layer, x, y, TEAM.ORDER[INDEX].CHAR.getSEQUENCE("HK"));
         }
         if (layer_sequence_is_finished(SEQ)) {
             state = stateFREE;

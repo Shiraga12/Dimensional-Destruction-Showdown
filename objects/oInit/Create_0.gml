@@ -77,14 +77,14 @@ TIME						=	90
 	
 	array_push(CHARACTER,	new CharacterData("Dexter and Dee Dee",		"Dexter, the boy genius with a secret laboratory, and his meddlesome sister Dee Dee from the animated series Dexter's Laboratory. Together, they create a mix of brilliant inventions and chaotic antics.",							"Dexter's Laboratory",					"Zoner"));
 	CHARACTER[3].SPRITES	=	{
-		Portrait:	sDexterAndDeeDeePortrait
+		Portrait:	sDexterAndDeeDeePortrait,
 	}
 	CHARACTER[3].SEQUENCES	=	{
 		IDLE:	seqDexterDeeDee_IDLE,
 		HP:		seqDexterHP,
 		HK:		seqDexterHK,
 				
-		LP:		seqDexterLP
+		LP:		seqDexterLP,
 	}	
 	
 	array_push(CHARACTER,	new CharacterData("Shrek",						"The lovable ogre from the swamp with a heart of gold. Shrek may appear gruff, but he's a true hero who values friendship and courage above all.",																								"Shrek",										"Grappler"));

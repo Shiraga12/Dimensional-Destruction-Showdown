@@ -32,8 +32,14 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
-  "spriteId":null,
-  "spriteMaskId":null,
+  "solid":true,
+  "spriteId":{
+    "name":"Stick_1",
+    "path":"sprites/Stick_1/Stick_1.yy",
+  },
+  "spriteMaskId":{
+    "name":"Dee_Dee___Idle",
+    "path":"sprites/Dee_Dee___Idle/Dee_Dee___Idle.yy",
+  },
   "visible":true,
 }
