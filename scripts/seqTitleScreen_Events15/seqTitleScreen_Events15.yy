@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"seqTitleScreen_Events15",
   "isCompatibility":false,
   "isDnD":false,

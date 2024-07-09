@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"MovesetData",
   "isCompatibility":false,
   "isDnD":false,

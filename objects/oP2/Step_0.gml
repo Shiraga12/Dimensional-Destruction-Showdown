@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 TEAM		=	T2
 KEY_LEFT	=	P2_KEYLEFT
 KEY_RIGHT	=	P2_KEYRIGHT
@@ -12,6 +11,7 @@ KEY_HP		=	P2_KEYHP
 KEY_HK		=	P2_KEYHK			
 KEY_A1		=	P2_KEYASSIST1
 KEY_A2		=	P2_KEYASSIST2
-KEY_SWAP	=	P2_KEYSWAP		
+KEY_SWAP	=	P2_KEYSWAP	
+// Inherit the parent event
+event_inherited();
 
-event_inherited()

@@ -14,28 +14,28 @@ TIME						=	90
 	#macro SCREEN_HEIGHT_HALF	SCREEN_HEIGHT	/	2
 }
 /*	Controls		*/	{
-	#macro KEY				keyboard_check
+	#macro KEY			keyboard_check
 	#macro KEY_PRESSED	keyboard_check_pressed
 	#macro KEY_RELEASED	keyboard_check_released
 	
-	#macro GAMEPAD				gamepad_button_check
-	#macro GAMEPAD_PRESSED		gamepad_button_check_pressed
+	#macro GAMEPAD			gamepad_button_check
+	#macro GAMEPAD_PRESSED	gamepad_button_check_pressed
 	#macro GAMEPAD_RELEASED	gamepad_button_check_released
-	#macro GAMEPAD_AXIS			gamepad_axis_value
+	#macro GAMEPAD_AXIS		gamepad_axis_value
 	
 	// Player 1
-	#macro P1_KEYLEFT		max(KEY(ord("A")),		GAMEPAD(0,			gp_padl),		GAMEPAD_AXIS(0,gp_axislh),	0)
-	#macro P1_KEYRIGHT		max(KEY(ord("D")),		GAMEPAD(0,			gp_padr),		-GAMEPAD_AXIS(0,gp_axislh),	0)
-	#macro P1_KEYJUMP		max(KEY(ord("W")),		GAMEPAD(0,			gp_padu),		-GAMEPAD_AXIS(0,gp_axislv),	0)
-	#macro P1_KEYCROUCH		max(KEY(ord("S")),		GAMEPAD(0,			gp_padd),		GAMEPAD_AXIS(0,gp_axislv),	0)
-	#macro P1_KEYLP			max(KEY(ord("J")),		GAMEPAD(0,			gp_face1),		0)
-	#macro P1_KEYLK			max(KEY(ord("K")),		GAMEPAD(0,			gp_face2),		0)
-	#macro P1_KEYHP			max(KEY(ord("U")),		GAMEPAD(0,			gp_face3),		0)
-	#macro P1_KEYHK			max(KEY(ord("I")),		GAMEPAD(0,			gp_face4),		0)
-	#macro P1_KEYASSIST1	max(KEY(ord("L")),		GAMEPAD(0,			gp_shoulderl),	0)
-	#macro P1_KEYASSIST2	max(KEY(ord("O")),		GAMEPAD(0,			gp_shoulderr),	0)
-	#macro P1_KEYSWAP		max(KEY(ord("P")),		GAMEPAD_PRESSED(0,	gp_shoulderrb),	0)
-	#macro P1_KEYSTART		max(KEY(vk_enter),		GAMEPAD_PRESSED(0,	gp_start),		0)
+	#macro P1_KEYLEFT		max(keyboard_check(ord("A")),		GAMEPAD(0,			gp_padl),		GAMEPAD_AXIS(0,gp_axislh),	0)
+	#macro P1_KEYRIGHT		max(keyboard_check(ord("D")),		GAMEPAD(0,			gp_padr),		-GAMEPAD_AXIS(0,gp_axislh),	0)
+	#macro P1_KEYJUMP		max(KEY_PRESSED(ord("W")),			GAMEPAD_PRESSED(0,	gp_padu),		-GAMEPAD_AXIS(0,gp_axislv),	0)
+	#macro P1_KEYCROUCH		max(keyboard_check(ord("S")),		GAMEPAD(0,			gp_padd),		GAMEPAD_AXIS(0,gp_axislv),	0)
+	#macro P1_KEYLP			max(keyboard_check(ord("J")),		GAMEPAD(0,			gp_face1),		0)
+	#macro P1_KEYLK			max(keyboard_check(ord("K")),		GAMEPAD(0,			gp_face2),		0)
+	#macro P1_KEYHP			max(keyboard_check(ord("U")),		GAMEPAD(0,			gp_face3),		0)
+	#macro P1_KEYHK			max(keyboard_check(ord("I")),		GAMEPAD(0,			gp_face4),		0)
+	#macro P1_KEYASSIST1	max(keyboard_check(ord("L")),		GAMEPAD(0,			gp_shoulderl),	0)
+	#macro P1_KEYASSIST2	max(keyboard_check(ord("O")),		GAMEPAD(0,			gp_shoulderr),	0)
+	#macro P1_KEYSWAP		max(keyboard_check(ord("P")),		GAMEPAD_PRESSED(0,	gp_shoulderrb),	0)
+	#macro P1_KEYSTART		max(keyboard_check(vk_enter),		GAMEPAD_PRESSED(0,	gp_start),		0)
 	
 	// Player 2
 	#macro P2_KEYLEFT		max(KEY(vk_left),		GAMEPAD(1,			gp_padl),		GAMEPAD_AXIS(1, gp_axislh),		0)
@@ -81,6 +81,7 @@ TIME						=	90
 	}
 	CHARACTER[3].SEQUENCES	=	{
 		IDLE:	seqDexterDeeDee_IDLE,
+		WALK:	seqDexterDeeDee_WALK,
 		HP:		seqDexterHP,
 		HK:		seqDexterHK,
 				
@@ -166,15 +167,15 @@ TIME						=	90
 	array_push(CREDIT,	new CreditData("Licensed Properites",""))
 	array_push(CREDIT,	new CreditData("",""))
 	array_push(CREDIT,	new CreditData("Dexter's Laboratory (Dexter & DeeDee)",			["Cartoon Network", "Warner Bros. Discovery"]));
-	array_push(CREDIT,	new CreditData("Mickey Mouse (Character)",							"Disney"));
-	array_push(CREDIT,	new CreditData("PAC-MAN (Character)",									"Bandai Namco Entertainment"));
-	array_push(CREDIT,	new CreditData("Shrek (Character)",									"DreamWorks Animation LLC"));
+	array_push(CREDIT,	new CreditData("Mickey Mouse (Character)",						"Disney"));
+	array_push(CREDIT,	new CreditData("PAC-MAN (Character)",							"Bandai Namco Entertainment"));
+	array_push(CREDIT,	new CreditData("Shrek (Character)",								"DreamWorks Animation LLC"));
 	array_push(CREDIT,	new CreditData("SpongeBob SquarePants (Character)",				["Nickelodeon",	"Viacom International",	"Paramount Global"]));
 	array_push(CREDIT,	new CreditData("My Life as a Teenage Robot (Jenny Wakeman)",	["Nickelodeon",	"Viacom International",	"Paramount Global"]));
-	array_push(CREDIT,	new CreditData("Cuphead (Cuphead and Mugman)",						"Studio MDHR"));
-	array_push(CREDIT,	new CreditData("The Legend of Zelda (Skull Kid)",						"Nintendo"));
-	array_push(CREDIT,	new CreditData("Paper Mario (Vivian)",									"Nintendo"));
-	array_push(CREDIT,	new CreditData("Wallace and Gromit (Character)",						"Aardman Animations"));
+	array_push(CREDIT,	new CreditData("Cuphead (Cuphead and Mugman)",					"Studio MDHR"));
+	array_push(CREDIT,	new CreditData("The Legend of Zelda (Skull Kid)",				"Nintendo"));
+	array_push(CREDIT,	new CreditData("Paper Mario (Vivian)",							"Nintendo"));
+	array_push(CREDIT,	new CreditData("Wallace and Gromit (Character)",				"Aardman Animations"));
 }
 /*	Encyclopedia	*/	{
 	globalvar ENCYCLOPEDIA;

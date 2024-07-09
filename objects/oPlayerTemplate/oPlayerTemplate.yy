@@ -2,9 +2,9 @@
   "$GMObject":"",
   "%Name":"oPlayerTemplate",
   "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oPlayerTemplate",
@@ -35,7 +35,7 @@
     {"$GMObjectProperty":"v1","%Name":"MOVESPEED","filters":[],"listItems":[],"multiselect":false,"name":"MOVESPEED","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"WALKSPEED","filters":[],"listItems":[],"multiselect":false,"name":"WALKSPEED","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"3","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"RUNSPEED","filters":[],"listItems":[],"multiselect":false,"name":"RUNSPEED","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"6","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"JUMPSPEED","filters":[],"listItems":[],"multiselect":false,"name":"JUMPSPEED","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"JUMPSPEED","filters":[],"listItems":[],"multiselect":false,"name":"JUMPSPEED","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"7","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"COMBOTIMER","filters":[],"listItems":[],"multiselect":false,"name":"COMBOTIMER","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"COMBOSEQUENCE","filters":[],"listItems":[],"multiselect":false,"name":"COMBOSEQUENCE","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"\"","varType":2,},
   ],
@@ -47,8 +47,8 @@
     "path":"sprites/Stick_1/Stick_1.yy",
   },
   "spriteMaskId":{
-    "name":"Dee_Dee___Idle",
-    "path":"sprites/Dee_Dee___Idle/Dee_Dee___Idle.yy",
+    "name":"Stick_1",
+    "path":"sprites/Stick_1/Stick_1.yy",
   },
   "visible":true,
 }

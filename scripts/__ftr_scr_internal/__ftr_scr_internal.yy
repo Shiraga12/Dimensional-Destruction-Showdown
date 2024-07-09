@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"__ftr_scr_internal",
   "isCompatibility":false,
   "isDnD":false,

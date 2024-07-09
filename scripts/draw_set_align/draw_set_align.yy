@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"draw_set_align",
   "isCompatibility":false,
   "isDnD":false,

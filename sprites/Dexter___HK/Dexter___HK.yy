@@ -23,7 +23,7 @@
   ],
   "name":"Dexter___HK",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Fighters",
     "path":"folders/Sprites/Fighters.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":417,
-    "yorigin":359,
+    "yorigin":719,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

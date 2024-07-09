@@ -39,19 +39,40 @@ stateINTRO = function() {
 }
 
 stateFREE = function() {
-    HSP = KEY_RIGHT - KEY_LEFT;
-//    MOVESPEED = KEY_RUN ? RUNSPEED : WALKSPEED;
-    HSP *= MOVESPEED;
-    
-    // Apply gravity if not grounded
+    HSP = (KEY_RIGHT - KEY_LEFT) * MOVESPEED;
+
+    // Vertical Speed and Gravity
     if (!place_meeting(x, y + 1, oGround)) {
-        VSP += GRV; // Adjust gravity as needed
+        VSP += GRV; // Apply gravity
     } else {
         VSP = 0; // Reset vertical speed when grounded
+        if (KEY_JUMP) {
+            VSP = -JUMPSPEED; // Apply jump speed
+        }
     }
-    
-    if (KEY_JUMP) {
-        VSP = -JUMPSPEED;
+
+    // Horizontal Collision Handling
+    if (HSP != 0) {
+        if (!place_meeting(x + HSP, y, oGround)) {
+            x += HSP; // Move horizontally if no collision
+        } else {
+            while (!place_meeting(x + sign(HSP), y, oGround)) {
+                x += sign(HSP); // Move until collision
+            }
+            HSP = 0; // Stop horizontal movement on collision
+        }
+    }
+
+    // Vertical Collision Handling
+    if (VSP != 0) {
+        if (!place_meeting(x, y + VSP, oGround)) {
+            y += VSP; // Move vertically if no collision
+        } else {
+            while (!place_meeting(x, y + sign(VSP), oGround)) {
+                y += sign(VSP); // Move until collision
+            }
+            VSP = 0; // Stop vertical movement on collision
+        }
     }
     
     move_and_collide(HSP, VSP, oGround);
