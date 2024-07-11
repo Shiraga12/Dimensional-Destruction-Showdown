@@ -13,6 +13,10 @@ enum FighterState {
 	Assist2
 }
 
+image_xscale = 2
+image_yscale = 2
+SIZE = 2
+
 SEQ[FighterState.Intro]			=	-1;	// Intro
 SEQ[FighterState.Idle]			=	-1;	// Idle
 SEQ[FighterState.Walk]			=	-1;	// Walk
@@ -39,6 +43,7 @@ stateINTRO = function() {
 }
 
 stateFREE = function() {
+	MOVESPEED = WALKSPEED
     HSP = (KEY_RIGHT - KEY_LEFT) * MOVESPEED;
 
     // Vertical Speed and Gravity
@@ -95,6 +100,7 @@ stateFREE = function() {
 					SEQ[FighterState.Walk] = layer_sequence_create(layer,x,y,TEAM.ORDER[INDEX].CHAR.getSEQUENCE("WALK"))
 				}
 			}
+			image_xscale = sign(HSP) * SIZE
 		} else if (VSP != 0) {
 		    //	sprite_index = TEAM.ORDER[INDEX].CHAR.getSPRITE("JUMP");
 		} else {
@@ -219,3 +225,53 @@ stateCOMBO_CHECK = function() {
 }
 
 state = stateFREE;
+
+// Example function to destroy unused sequences
+destroyUnusedSequences = function() {
+    if (state == stateFREE) {
+        // Check and destroy sequences based on specific conditions
+
+        // Destroy idle sequence if character starts moving
+        if (layer_sequence_exists(layer, SEQ[FighterState.Idle]) && HSP != 0) {
+            layer_sequence_destroy(SEQ[FighterState.Idle]);
+            SEQ[FighterState.Idle] = -1; // Reset sequence ID
+        }
+        // Destroy walk sequence if character stops moving
+        if (layer_sequence_exists(layer, SEQ[FighterState.Walk]) && HSP == 0) {
+            layer_sequence_destroy(SEQ[FighterState.Walk]);
+            SEQ[FighterState.Walk] = -1; // Reset sequence ID
+        }
+        // Destroy jump sequence when character lands
+        if (layer_sequence_exists(layer, SEQ[FighterState.Jump]) && place_meeting(x, y + 1, oGround)) {
+            layer_sequence_destroy(SEQ[FighterState.Jump]);
+            SEQ[FighterState.Jump] = -1; // Reset sequence ID
+        }
+        // Destroy attack sequences after they finish playing
+        if (layer_sequence_exists(layer, SEQ[FighterState.WeakPunch]) && layer_sequence_is_finished(SEQ[FighterState.WeakPunch])) {
+            layer_sequence_destroy(SEQ[FighterState.WeakPunch]);
+            SEQ[FighterState.WeakPunch] = -1; // Reset sequence ID
+        }
+        if (layer_sequence_exists(layer, SEQ[FighterState.WeakKick]) && layer_sequence_is_finished(SEQ[FighterState.WeakKick])) {
+            layer_sequence_destroy(SEQ[FighterState.WeakKick]);
+            SEQ[FighterState.WeakKick] = -1; // Reset sequence ID
+        }
+        if (layer_sequence_exists(layer, SEQ[FighterState.HeavyPunch]) && layer_sequence_is_finished(SEQ[FighterState.HeavyPunch])) {
+            layer_sequence_destroy(SEQ[FighterState.HeavyPunch]);
+            SEQ[FighterState.HeavyPunch] = -1; // Reset sequence ID
+        }
+        if (layer_sequence_exists(layer, SEQ[FighterState.HeavyKick]) && layer_sequence_is_finished(SEQ[FighterState.HeavyKick])) {
+            layer_sequence_destroy(SEQ[FighterState.HeavyKick]);
+            SEQ[FighterState.HeavyKick] = -1; // Reset sequence ID
+        }
+
+        // Destroy assist sequences after they finish playing
+        if (layer_sequence_exists(layer, SEQ[FighterState.Assist1]) && layer_sequence_is_finished(SEQ[FighterState.Assist1])) {
+            layer_sequence_destroy(SEQ[FighterState.Assist1]);
+            SEQ[FighterState.Assist1] = -1; // Reset sequence ID
+        }
+        if (layer_sequence_exists(layer, SEQ[FighterState.Assist2]) && layer_sequence_is_finished(SEQ[FighterState.Assist2])) {
+            layer_sequence_destroy(SEQ[FighterState.Assist2]);
+            SEQ[FighterState.Assist2] = -1; // Reset sequence ID
+        }
+    }
+}

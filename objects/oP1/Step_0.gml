@@ -1,5 +1,5 @@
 /// @description Insert description here
-// You can write your code in this editor
+// oP1 - STEP Event
 TEAM		=	T1
 KEY_LEFT	=	P1_KEYLEFT
 KEY_RIGHT	=	P1_KEYRIGHT
