@@ -128,12 +128,18 @@ TIME						=	90
 		Portrait: sMettatonEXPortrait,
 	}
 	
-	array_push(CHARACTER,	new CharacterData("Jenny Wakeman",			"Jenny Wakeman, also known as XJ-9, is a teenage robot designed to protect Earth. Balancing her superhero duties with the trials of teenage life, Jenny uses her advanced technology and gadgets to fight for justice.",			"My Life as a Teenage Robot",			""));
+	array_push(CHARACTER,	new CharacterData("Jenny Wakeman",				"Jenny Wakeman, also known as XJ-9, is a teenage robot designed to protect Earth. Balancing her superhero duties with the trials of teenage life, Jenny uses her advanced technology and gadgets to fight for justice.",			"My Life as a Teenage Robot",			""));
 	CHARACTER[14].SPRITES	=	{
 		Portrait:	noone,
 		AlternatePortrait: {
 			A: sJennyWakemanPortraitAltA
 		},
+	}
+	
+	array_push(CHARACTER,	new CharacterData("Ragna=The=Bloodedge",		"",			"BlazBlue",			""));
+	CHARACTER[15].SEQUENCES	=	{
+		IDLE: seqRagna_IDLE,
+		WALK: seqRagna_RUN
 	}
 }
 /*	Stages		*/	{
@@ -176,6 +182,7 @@ TIME						=	90
 	array_push(CREDIT,	new CreditData("The Legend of Zelda (Skull Kid)",				"Nintendo"));
 	array_push(CREDIT,	new CreditData("Paper Mario (Vivian)",							"Nintendo"));
 	array_push(CREDIT,	new CreditData("Wallace and Gromit (Character)",				"Aardman Animations"));
+	array_push(CREDIT,	new CreditData("BlazBlue (Ragna)",								"Arc System Works"));
 }
 /*	Encyclopedia	*/	{
 	globalvar ENCYCLOPEDIA;

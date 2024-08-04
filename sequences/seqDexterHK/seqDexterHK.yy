@@ -26,8 +26,8 @@
   },
   "name":"seqDexterHK",
   "parent":{
-    "name":"Sequences",
-    "path":"folders/Sequences.yy",
+    "name":"Dexter and Dee Dee",
+    "path":"folders/Sequences/Dexter and Dee Dee.yy",
   },
   "playback":0,
   "playbackSpeed":60.0,

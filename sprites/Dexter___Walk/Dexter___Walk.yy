@@ -41,8 +41,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Fighters",
-    "path":"folders/Sprites/Fighters.yy",
+    "name":"Dexter and Dee Dee",
+    "path":"folders/Sprites/Fighters/Dexter and Dee Dee.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
