@@ -19,6 +19,7 @@
   "height":1600,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"98a4ba19-97dc-4767-8f04-399d498826d0","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"98a4ba19-97dc-4767-8f04-399d498826d0","opacity":30.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"9937dcd2-fc67-485c-b67e-bec489b507b9","blendMode":0,"displayName":"default","isLocked":false,"name":"9937dcd2-fc67-485c-b67e-bec489b507b9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"sAngelDustPortrait",
@@ -59,7 +60,7 @@
     },
     "name":"sAngelDustPortrait",
     "playback":1,
-    "playbackSpeed":30.0,
+    "playbackSpeed":0.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",

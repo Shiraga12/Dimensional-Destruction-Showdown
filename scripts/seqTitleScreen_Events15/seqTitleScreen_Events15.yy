@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"seqTitleScreen_Events15",
   "parent":{
-    "name":"Dimensional Destruction Showdown",
-    "path":"Dimensional Destruction Showdown.yyp",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
