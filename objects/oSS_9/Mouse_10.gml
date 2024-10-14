@@ -1,0 +1,1 @@
+sprite_index = s_SS6_1;

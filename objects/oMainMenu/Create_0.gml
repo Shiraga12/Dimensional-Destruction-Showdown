@@ -7,9 +7,6 @@ array_push(OPTIONS, new OptionData("Story Mode (Coming soon!... hopefully!)",		"
     // Implement story mode functionality
 }));
 array_push(OPTIONS, new OptionData("Versus Mode",		"Challenge other players.",		function() {
-    // Implement versus mode functionality
-}));
-array_push(OPTIONS, new OptionData("Selection Screen",			"Choose character.",			function() {
     room_goto(rmSS);
 }));
 array_push(OPTIONS, new OptionData("Tutorial",			"Learn how to play.",			function() {

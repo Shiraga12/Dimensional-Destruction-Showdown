@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ggmr_net_send",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ggmr_net_send",
+  "parent":{
+    "name":"GGMR_Net",
+    "path":"folders/[GGMR]/GGMR_Net.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

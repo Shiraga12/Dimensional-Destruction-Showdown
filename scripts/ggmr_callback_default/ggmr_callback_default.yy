@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ggmr_callback_default",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ggmr_callback_default",
+  "parent":{
+    "name":"[GGMR]",
+    "path":"folders/[GGMR].yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

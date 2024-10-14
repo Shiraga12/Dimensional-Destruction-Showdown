@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"only_one",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"only_one",
+  "parent":{
+    "name":"Extra",
+    "path":"folders/[GGMR]/Extra.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

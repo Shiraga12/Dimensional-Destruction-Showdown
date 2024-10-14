@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ggmr_chat_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ggmr_chat_init",
+  "parent":{
+    "name":"GGMR_Chat",
+    "path":"folders/[GGMR]/GGMR_Chat.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
